@@ -1,0 +1,46 @@
+//
+//
+@font-face {
+    font-family: roboto-regular;
+    src: url('../fonts/Roboto-Regular.woff') format('woff'),
+         url('../fonts/Roboto-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url('../fonts/Roboto-Light.woff') format('woff'),
+         url('../fonts/Roboto-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: roboto-thin;
+    src: url('../fonts/Roboto-Thin.woff') format('woff'),
+         url('../fonts/Roboto-Thin.woff2') format('woff2');
+}
+$roboto-light: roboto-light;
+$roboto-regular: roboto-regular;
+$roboto-thin: roboto-thin;
+
+
+
+//break points
+$res_480:   480px;
+$res_600:   600px;
+$res_720:   720px;
+$res_860:   860px;
+$res_1100:  1100px;
+$res_1300:  1300px;
+$res_1440:  1440px;
+
+//colors
+$color-white:       #fff;
+$color-green:       #82c450;
+$color-blue:        #282461;
+$color-gray:        #e5e7ea;
+
+
+//fonts
+$font:    roboto-regular, Arial, sans-serif;
+$font_light:    roboto-light, Arial, sans-serif;
+$font_thin: roboto-thin, Arial, sans-serif;
+
+

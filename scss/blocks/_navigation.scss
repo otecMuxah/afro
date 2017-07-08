@@ -1,0 +1,26 @@
+.navigation {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        font: 28px/30px $font_light;
+        color: $color-white;
+        text-decoration: underline;
+        padding-left: 30px;
+        position: relative;
+    }
+    &__icon {
+        fill: $color-green;
+        width: 32px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

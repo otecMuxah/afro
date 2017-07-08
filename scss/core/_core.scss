@@ -1,0 +1,19 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    background: #000;
+    font: 16px $font_light;
+    color: $color-white;
+}
+.hidden {
+  display: none !important;
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+

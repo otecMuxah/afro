@@ -1,0 +1,21 @@
+.main-banner {
+    background: url('../img/main-banner.jpg') no-repeat;
+    background-size: contain;
+    height: 1715px;
+    &__form {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 100%;
+        max-width: 2370px;
+        margin: 0 auto;
+    }
+    .form {
+        border-radius: 10px;
+        background-color: rgba(0, 3, 54, 0.6);
+        width: 1217px;
+        height: 867px;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,29 @@
+
+
+@mixin width1300 {
+    @media screen and (max-width: $res_1300) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $res_1100) {
+        @content;
+    }
+}
+@mixin px800 {
+    @media screen and (max-width: 800px) {
+        @content;
+    }
+}
+@mixin phone {
+    @media screen and (max-width: $res_720) {
+        @content;
+    }
+}
+
+@mixin small-phone {
+    @media screen and (max-width: $res_480) {
+        @content;
+    }
+}

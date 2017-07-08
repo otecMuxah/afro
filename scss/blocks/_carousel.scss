@@ -1,0 +1,56 @@
+.carousel {
+    &--wrapper {
+        width: 84%;
+    }
+    &--holder {
+        display: flex;
+    }
+    &__fixed-frame {
+
+    }
+    &__frame-text {
+        font: 52px/62px $font;
+        background: #dcdae8;
+        padding: 40px 20px;
+        display: block;
+        width: 360px;
+        height: 410px;
+        box-sizing: border-box;
+    }
+    &__img {
+        width: 360px;
+        height: 410px;
+    }
+    &__button {
+        font-size: 37px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &__candidate-name {
+        font: 28px/30px $font;
+        color: #000000;
+        display: block;
+    }
+    &__candidate-position {
+        font: 24px/26px $font_light;
+        color: #000000;
+        strong {
+            font-family: $font;
+        }
+    }
+    .slick-prev, .slick-next {
+        top: -10%;
+        width: 40px;
+        height: 40px;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 40px;
+    }
+    .slick-next {
+        right: -285px;
+    }
+    .slick-prev {
+        left: auto;
+        right: -245px;
+    }
+}

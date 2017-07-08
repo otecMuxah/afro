@@ -1,0 +1,55 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &__wrapper {
+        max-width: 2370px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+    }
+    &__logo {
+        position: relative;
+        &:before {
+            content: '';
+            height: 55px;
+            width: 236px;
+            border-radius: 28px;
+            background: $color-green;
+            position: absolute;
+            top:50%;
+            left: 0;
+            transform: translate(-100%,-50%);
+        }
+    }
+    &__logo-svg {
+        height: 230px;
+        width: 290px;
+    }
+    &__nav-holder {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        background: $color-blue;
+        font: 28px/30px $font_light;
+        border-radius: 28px;
+        padding: 0 240px 0 40px;
+        margin-right: -200px;
+    }
+    &__own-agency {
+        color: $color-white;
+        text-decoration: underline;
+    }
+    &__enter-employer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font: 33px $font_light;
+        color: $color-blue;
+    }
+}

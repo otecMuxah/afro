@@ -1,0 +1,13 @@
+%heading-line {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        background: #dcdcdc;
+    }
+}

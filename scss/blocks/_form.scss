@@ -1,0 +1,38 @@
+.form {
+    border-radius: 10px;
+    background-color: rgba(0, 3, 54, 0.6);
+    max-width: 1217px;
+    height: 867px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 35px;
+    box-sizing: border-box;
+    &__header {
+        font-size: 139px;
+        align-self: center;
+        font-family: $font_light;
+    }
+    &__select-holder {
+        display: flex;
+        justify-content: center;
+    }
+    &__radio-holder input {
+        font-size: 34px;
+    }
+    &__buttons-holder {
+        display: flex;
+        .button {
+            flex: 0 0 33%;
+            &:first-child {
+                flex: 0 0 66%;
+            }
+        }
+    }
+    &__image {
+        height: 216px;
+        fill: $color-white;
+    }
+    &__frame-text {
+
+    }
+}
