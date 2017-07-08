@@ -1,5 +1,13 @@
 .job-seekers {
     background: $color-gray;
+    background: #e5e7ea;
+    padding-bottom: 52px;
+    border-bottom: 2px solid #b6b7b9;
+    margin-bottom: 60px;
+    @include width2370 {
+        box-sizing: border-box;
+        padding: 0 40px;
+    }
     &__wrapper {
         max-width: 2370px;
         margin: 0 auto;
@@ -11,6 +19,8 @@
         justify-content: space-between;
         height: 100px;
         align-items: center;
+        padding-right: 44px;
+        box-sizing: border-box;
     }
     &__title {
         font-size: 32px;
@@ -20,5 +30,9 @@
         font-size: 28px;
         color: $color-blue;
         text-decoration: underline;
+        &:hover {
+            color: $color-green;
+            transition: 0.2s;
+        }
     }
 }

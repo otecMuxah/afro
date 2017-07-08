@@ -1,5 +1,15 @@
 
 
+@mixin width2370 {
+    @media screen and (max-width: $res_2370) {
+        @content;
+    }
+}
+@mixin width1700 {
+    @media screen and (max-width: $res_1700) {
+        @content;
+    }
+}
 @mixin width1300 {
     @media screen and (max-width: $res_1300) {
         @content;

@@ -10,4 +10,10 @@
     border: 0;
     white-space: nowrap;
     font-family: $font_light;
+    transition: 0.2s;
+    &:hover {
+        transition: 0.2s;
+        background: darken($color-green,20%);
+    }
+
 }

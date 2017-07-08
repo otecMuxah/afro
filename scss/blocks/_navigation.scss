@@ -3,17 +3,36 @@
         display: flex;
     }
     &__item {
-        margin-right: 20px;
+        margin-right: 60px;
         &:last-child {
             margin-right: 0;
+            margin-left: 101px;
+        }
+        @include width1700 {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+                margin-left: 0;
+            }
         }
     }
     &__link {
         font: 28px/30px $font_light;
         color: $color-white;
         text-decoration: underline;
-        padding-left: 30px;
+        padding-left: 40px;
         position: relative;
+        @include width1700 {
+            font: 20px/22px $font_light;
+            padding-left: 20px;
+        }
+        @include width1300 {
+            font-size: 16px;
+        }
+        &:hover {
+            color: $color-green;
+            transition: 0.2s;
+        }
     }
     &__icon {
         fill: $color-green;
@@ -22,5 +41,8 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+        @include width1700 {
+            width: 16px;
+        }
     }
 }

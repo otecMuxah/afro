@@ -1,0 +1,39 @@
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #eef0f3;
+    padding-bottom: 90px;
+    &__button {
+        width: 1150px;
+        background: $color-blue;
+        color: $color-white;
+        font-size: 46px;
+        height: 95px;
+        border-radius: 48px;
+        margin-bottom: 140px;
+        @include width1300 {
+            width: 80%;
+        }
+    }
+    &__holder {
+        display: flex;
+        justify-content: space-between;
+        width: 1150px;
+        border-top: 2px solid #b6b7b9;
+        font-size: 26px;
+        color: #262626;
+        padding-top: 18px;
+        ul {
+            display: flex;
+        }
+        a {
+            color: #262626;
+            margin-left: 15px;
+            &:hover {
+                color: $color-green;
+                transition: 0.2s;
+            }
+        }
+    }
+}

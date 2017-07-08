@@ -1,7 +1,11 @@
 .main-banner {
     background: url('../img/main-banner.jpg') no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 1715px;
+    @include width2370 {
+        box-sizing: border-box;
+        padding: 0 40px;
+    }
     &__form {
         display: flex;
         flex-direction: row-reverse;
@@ -9,13 +13,7 @@
         height: 100%;
         max-width: 2370px;
         margin: 0 auto;
+
     }
-    .form {
-        border-radius: 10px;
-        background-color: rgba(0, 3, 54, 0.6);
-        width: 1217px;
-        height: 867px;
-        display: flex;
-        flex-direction: column;
-    }
+
 }
