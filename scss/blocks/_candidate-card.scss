@@ -3,6 +3,8 @@
     border: 1px $color-gray solid;
     border-radius: 6px;
     margin-bottom: 60px;
+    padding: 36px;
+    box-sizing: border-box;
     &__wrapper {
         display: flex;
         position: relative;
@@ -19,6 +21,7 @@
     }
     &__holder {
         flex: 1;
+        padding: 0 36px;
     }
     &__controls {
         display: flex;
@@ -58,9 +61,10 @@
     &__name {
         font: 44px $font;
         color: #000000;
+        margin-bottom: 20px;
     }
     &__details-holder {
-        
+
         color: #000000;
     }
     &__detail {

@@ -708,7 +708,9 @@ body {
   background: #fff;
   border: 1px #e5e7ea solid;
   border-radius: 6px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  padding: 36px;
+  box-sizing: border-box; }
   .candidate-card__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -724,7 +726,8 @@ body {
   .candidate-card__holder {
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1; }
+            flex: 1;
+    padding: 0 36px; }
   .candidate-card__controls {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -771,7 +774,8 @@ body {
     height: 410px; }
   .candidate-card__name {
     font: 44px roboto-regular, Arial, sans-serif;
-    color: #000000; }
+    color: #000000;
+    margin-bottom: 20px; }
   .candidate-card__details-holder {
     color: #000000; }
   .candidate-card__detail {
