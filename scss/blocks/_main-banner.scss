@@ -5,6 +5,7 @@
     @include width2370 {
         box-sizing: border-box;
         padding: 0 40px;
+        background-position: center;
     }
     &__form {
         display: flex;

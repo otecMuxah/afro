@@ -1,0 +1,31 @@
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    &__icon {
+        width: 15px;
+        height: 15px;
+        border: 1px solid $color-gray-2;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon-svg {
+        height: 10px;
+        width: 10px;
+        fill: $color-white;
+        display: none;
+    }
+    &__input {
+        display: none;
+        &:checked ~ .checkbox__icon {
+            background: $color-green;
+            border: 1px solid $color-green;
+            .checkbox__icon-svg {
+                display: block;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.candidate-card {
+    background: $color-white;
+    border: 1px $color-gray solid;
+    border-radius: 6px;
+    margin-bottom: 60px;
+    &__wrapper {
+        display: flex;
+        position: relative;
+        &--more {
+
+        }
+    }
+    &__icon-holder {
+        display: flex;
+    }
+    &__icon {
+        fill: $color-green;
+        width: 80px;
+    }
+    &__holder {
+        flex: 1;
+    }
+    &__controls {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 162px;
+        .candidate-card__wrapper--more & {
+            justify-content: flex-end;
+        }
+    }
+    &__more {
+        font-size: 28px;
+        color: $color-blue;
+        display: flex;
+        align-items: center;
+    }
+    &__more-icon {
+        font-family: slick;
+        width: 60px;
+        height: 60px;
+        transform: rotate(90deg);
+        display: inline-block;
+        &:before {
+            content: "→";
+            font-size: 60px;
+        }
+    }
+    &__close-button-svg {
+        width: 55px;
+        height: 55px;
+    }
+    &__img {
+        width: 360px;
+        height: 410px;
+    }
+    &__name {
+        font: 44px $font;
+        color: #000000;
+    }
+    &__details-holder {
+        
+        color: #000000;
+    }
+    &__detail {
+        display: flex;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    &__detail-name,
+    &__detail-value {
+        flex: 0 0 50%;
+    }
+    &__detail-value {
+        font-family: $font;
+    }
+}

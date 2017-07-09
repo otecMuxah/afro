@@ -1,0 +1,70 @@
+.hire-now {
+    padding: 0 20px;
+    margin-bottom: 40px;
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__buttons-holder {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__select-holder {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__select-wrapper {
+        flex: 0 0 23%;
+        &:first-child {
+            flex: 0 0 48%;
+        }
+    }
+    &__radio-holder {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__img-svg {
+        height: 270px;
+    }
+    &__image {
+        flex: 0 0 300px;
+    }
+    &__holder {
+        flex: 0 0 calc(100% - 300px);
+    }
+    &__title {
+        font: 95px $font_thin;
+        color: #636363;
+    }
+    &__label {
+        flex: 0 0 50%;
+        font-size: 26px;
+        color: $color-blue;
+    }
+    &__button {
+        height: 95px;
+        border-radius: 48px;
+        font-size: 46px;
+    }
+    .ui-selectmenu-button.ui-button {
+        border-bottom: 2px solid $color-gray-2;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .ui-button .ui-selectmenu-icon.ui-icon:before {
+        border-color: $color-gray-2 transparent transparent transparent;
+    }
+    .ui-selectmenu-text {
+        color: $color-blue;
+        font-size: 28px;
+    }
+    .ui-menu .ui-menu-item-wrapper {
+        font-size: 28px !important;
+    }
+    .ui-button .ui-selectmenu-icon.ui-icon {
+        top: 11px;
+    }
+}

@@ -1,11 +1,13 @@
 .header {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     @include width2370 {
         box-sizing: border-box;
         padding: 0 40px;
+    }
+    &--abs {
+        position: absolute;
     }
     &__wrapper {
         max-width: 2370px;
