@@ -768,7 +768,13 @@ body {
       font-size: 60px; }
   .candidate-card__close-button-svg {
     width: 55px;
-    height: 55px; }
+    height: 55px;
+    fill: #989797;
+    cursor: pointer;
+    transition: 0.2s; }
+    .candidate-card__close-button-svg:hover {
+      transition: 0.2s;
+      fill: #282461; }
   .candidate-card__img {
     width: 360px;
     height: 410px; }

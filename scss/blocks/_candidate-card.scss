@@ -53,6 +53,13 @@
     &__close-button-svg {
         width: 55px;
         height: 55px;
+        fill: #989797;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            transition: 0.2s;
+            fill: $color-blue;
+        }
     }
     &__img {
         width: 360px;
