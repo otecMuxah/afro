@@ -65,6 +65,15 @@
         width: 360px;
         height: 410px;
     }
+    &__verified {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        svg {
+            height: 60px;
+            width: 60px;
+        }
+    }
     &__name {
         font: 44px $font;
         color: #000000;
