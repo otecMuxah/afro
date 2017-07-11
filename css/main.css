@@ -109,7 +109,8 @@ body {
   z-index: 10; }
   @media screen and (max-width: 1185px) {
     .header {
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       padding: 0 20px; } }
   .header--abs {
     position: absolute; }
@@ -177,6 +178,7 @@ body {
         font-size: 8px; } }
     .header__own-agency:hover {
       color: #82c450;
+      -webkit-transition: 0.2s;
       transition: 0.2s; }
   .header__enter-employer {
     position: absolute;
@@ -184,6 +186,38 @@ body {
     right: 45px;
     font: 17px roboto-light, Arial, sans-serif;
     color: #282461; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 45px; }
+  .footer__holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 575px;
+    border-top: 1px solid #b6b7b9;
+    font-size: 13px;
+    color: #262626;
+    padding-top: 9px; }
+    .footer__holder ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .footer__holder a {
+      color: #262626;
+      margin-left: 8px; }
+      .footer__holder a:hover {
+        color: #82c450;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
 
 .navigation__list {
   display: -webkit-box;
@@ -220,6 +254,7 @@ body {
       font-size: 13px; } }
   .navigation__link:hover {
     color: #82c450;
+    -webkit-transition: 0.2s;
     transition: 0.2s; }
 
 .navigation__icon {
@@ -248,14 +283,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  box-shadow: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
   border: 0;
   white-space: nowrap;
   font-family: roboto-light, Arial, sans-serif;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
   color: #fff; }
   .button:hover {
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     background: #82c450;
     color: #282461; }
@@ -283,7 +321,8 @@ body {
       display: block; }
   @media screen and (max-width: 1185px) {
     .main-banner {
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       padding: 0 20px;
       background-position: center; } }
   .main-banner__form {
@@ -316,7 +355,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 18px 16px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transform: translate(-4%, 7%);
           transform: translate(-4%, 7%); }
   .form--hire {
@@ -336,7 +376,6 @@ body {
   .form__header {
     font-size: 70px;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
     font-family: roboto-light, Arial, sans-serif;
     margin-bottom: 30px; }
@@ -473,7 +512,8 @@ body {
   margin-bottom: 30px; }
   @media screen and (max-width: 1185px) {
     .job-seekers {
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       padding: 0 20px; } }
   .job-seekers__wrapper {
     max-width: 1185px;
@@ -491,7 +531,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding-right: 22px;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .job-seekers__title {
     font-size: 16px;
     color: #282461; }
@@ -501,6 +542,7 @@ body {
     text-decoration: underline; }
     .job-seekers__see-all:hover {
       color: #82c450;
+      -webkit-transition: 0.2s;
       transition: 0.2s; }
 
 .carousel--wrapper {
@@ -525,7 +567,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-right: 15px;
   width: 100%; }
 
@@ -541,7 +584,8 @@ body {
   display: block;
   width: 180px;
   height: 205px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #fff;
   border-radius: 5px;
   margin-bottom: 15px; }
@@ -556,7 +600,8 @@ body {
 .carousel__button {
   font-size: 18px;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 38px;
   border-radius: 16px; }
 
@@ -578,11 +623,13 @@ body {
   height: 30px; }
   .carousel .slick-prev:hover:before, .carousel .slick-next:hover:before {
     color: #282461;
+    -webkit-transition: 0.2s;
     transition: 0.2s; }
 
 .carousel .slick-prev:before, .carousel .slick-next:before {
   font-size: 30px;
   color: #d2c5c5;
+  -webkit-transition: 0.2s;
   transition: 0.2s; }
 
 .carousel .slick-next {
@@ -606,8 +653,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #eef0f3;
-  padding-bottom: 45px; }
+  background: #eef0f3; }
   .how-it-works__button {
     width: 575px;
     background: #282461;
@@ -619,28 +665,6 @@ body {
     @media screen and (max-width: 650px) {
       .how-it-works__button {
         width: 80%; } }
-  .how-it-works__holder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 575px;
-    border-top: 1px solid #b6b7b9;
-    font-size: 13px;
-    color: #262626;
-    padding-top: 9px; }
-    .how-it-works__holder ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .how-it-works__holder a {
-      color: #262626;
-      margin-left: 8px; }
-      .how-it-works__holder a:hover {
-        color: #82c450;
-        transition: 0.2s; }
 
 .hire-now {
   padding: 0 10px;
@@ -713,7 +737,8 @@ body {
   .hire-now .ui-selectmenu-button.ui-button {
     border-bottom: 1px solid #aeb2be;
     width: 100%;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .hire-now .ui-button .ui-selectmenu-icon.ui-icon:before {
     border-color: #aeb2be transparent transparent transparent; }
   .hire-now .ui-selectmenu-text {
@@ -730,7 +755,8 @@ body {
   border-radius: 6px;
   margin-bottom: 30px;
   padding: 18px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .candidate-card__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -791,8 +817,10 @@ body {
     height: 27px;
     fill: #989797;
     cursor: pointer;
+    -webkit-transition: 0.2s;
     transition: 0.2s; }
     .candidate-card__close-button-svg:hover {
+      -webkit-transition: 0.2s;
       transition: 0.2s;
       fill: #282461; }
   .candidate-card__img {

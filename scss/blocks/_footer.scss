@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    &__holder {
+        display: flex;
+        justify-content: space-between;
+        width: 575px;
+        border-top: 1px solid #b6b7b9;
+        font-size: 13px;
+        color: #262626;
+        padding-top: 9px;
+        ul {
+            display: flex;
+        }
+        a {
+            color: #262626;
+            margin-left: 8px;
+            &:hover {
+                color: $color-green;
+                transition: 0.2s;
+            }
+        }
+    }
+}

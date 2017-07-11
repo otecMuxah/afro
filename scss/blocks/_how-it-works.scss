@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     background: #eef0f3;
-    padding-bottom: 45px;
+
     &__button {
         width: 575px;
         background: $color-blue;
@@ -16,24 +16,5 @@
             width: 80%;
         }
     }
-    &__holder {
-        display: flex;
-        justify-content: space-between;
-        width: 575px;
-        border-top: 1px solid #b6b7b9;
-        font-size: 13px;
-        color: #262626;
-        padding-top: 9px;
-        ul {
-            display: flex;
-        }
-        a {
-            color: #262626;
-            margin-left: 8px;
-            &:hover {
-                color: $color-green;
-                transition: 0.2s;
-            }
-        }
-    }
+
 }
