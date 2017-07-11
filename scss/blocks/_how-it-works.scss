@@ -3,33 +3,33 @@
     flex-direction: column;
     align-items: center;
     background: #eef0f3;
-    padding-bottom: 90px;
+    padding-bottom: 45px;
     &__button {
-        width: 1150px;
+        width: 575px;
         background: $color-blue;
         color: $color-white;
-        font-size: 46px;
-        height: 95px;
-        border-radius: 48px;
-        margin-bottom: 140px;
-        @include width1300 {
+        font-size: 23px;
+        height: 48px;
+        border-radius: 25px;
+        margin-bottom: 70px;
+        @include width650 {
             width: 80%;
         }
     }
     &__holder {
         display: flex;
         justify-content: space-between;
-        width: 1150px;
-        border-top: 2px solid #b6b7b9;
-        font-size: 26px;
+        width: 575px;
+        border-top: 1px solid #b6b7b9;
+        font-size: 13px;
         color: #262626;
-        padding-top: 18px;
+        padding-top: 9px;
         ul {
             display: flex;
         }
         a {
             color: #262626;
-            margin-left: 15px;
+            margin-left: 8px;
             &:hover {
                 color: $color-green;
                 transition: 0.2s;

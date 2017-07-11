@@ -1,6 +1,6 @@
 .hire-now {
-    padding: 0 20px;
-    margin-bottom: 40px;
+    padding: 0 10px;
+    margin-bottom: 20px;
     &__form {
         display: flex;
         flex-wrap: wrap;
@@ -14,7 +14,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     &__select-wrapper {
         flex: 0 0 23%;
@@ -27,30 +27,30 @@
         justify-content: flex-end;
     }
     &__img-svg {
-        height: 270px;
+        height: 135px;
     }
     &__image {
-        flex: 0 0 300px;
+        flex: 0 0 150px;
     }
     &__holder {
-        flex: 0 0 calc(100% - 300px);
+        flex: 0 0 calc(100% - 150px);
     }
     &__title {
-        font: 95px $font_thin;
+        font: 48px $font_thin;
         color: #636363;
     }
     &__label {
         flex: 0 0 50%;
-        font-size: 26px;
+        font-size: 13px;
         color: $color-blue;
     }
     &__button {
-        height: 95px;
-        border-radius: 48px;
-        font-size: 46px;
+        height: 48px;
+        border-radius: 24px;
+        font-size: 23px;
     }
     .ui-selectmenu-button.ui-button {
-        border-bottom: 2px solid $color-gray-2;
+        border-bottom: 1px solid $color-gray-2;
         width: 100%;
         box-sizing: border-box;
     }
@@ -59,12 +59,12 @@
     }
     .ui-selectmenu-text {
         color: $color-blue;
-        font-size: 28px;
+        font-size: 14px;
     }
     .ui-menu .ui-menu-item-wrapper {
-        font-size: 28px !important;
+        font-size: 14px !important;
     }
     .ui-button .ui-selectmenu-icon.ui-icon {
-        top: 11px;
+        top: 6px;
     }
 }

@@ -4,13 +4,13 @@
         align-items: center;
     }
     &__item {
-        margin-right: 60px;
+        margin-right: 30px;
         &:last-child {
             margin-right: 0;
-            margin-left: 101px;
+            margin-left: 52px;
         }
-        @include width1700 {
-            margin-right: 30px;
+        @include width850 {
+            margin-right: 8px;
             &:last-child {
                 margin-right: 0;
                 margin-left: 0;
@@ -18,17 +18,17 @@
         }
     }
     &__link {
-        font: 28px/30px $font_light;
+        font: 14px/15px $font_light;
         color: $color-white;
         text-decoration: underline;
-        padding-left: 40px;
+        padding-left: 20px;
         position: relative;
-        @include width1700 {
-            font: 20px/22px $font_light;
-            padding-left: 20px;
+        @include width850 {
+            font: 10px/11px $font_light;
+            padding-left: 10px;
         }
-        @include width1300 {
-            font-size: 16px;
+        @include width650 {
+            font-size: 13px;
         }
         &:hover {
             color: $color-green;
@@ -37,13 +37,13 @@
     }
     &__icon {
         fill: $color-green;
-        width: 32px;
+        width: 16px;
         position: absolute;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        @include width1700 {
-            width: 16px;
+        @include width850 {
+            width: 8px;
         }
     }
 }

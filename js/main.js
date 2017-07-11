@@ -5,23 +5,30 @@ $(window).load(function() {
         slidesToScroll: 5,
         responsive: [
             {
-                breakpoint: 2370,
+                breakpoint: 1185,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
                     infinite: true,
                     dots: true
                 }
             },
             {
-                breakpoint: 1500,
+                breakpoint: 1050,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 850,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
             },
             {
-                breakpoint: 1300,
+                breakpoint: 650,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
