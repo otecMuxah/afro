@@ -194,7 +194,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 45px; }
+  padding-bottom: 45px;
+  min-height: 30px; }
   .footer__holder {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -712,7 +713,8 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end; }
   .hire-now__img-svg {
-    height: 135px; }
+    height: 135px;
+    width: 111px; }
   .hire-now__image {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 150px;
