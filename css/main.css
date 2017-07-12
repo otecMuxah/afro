@@ -374,6 +374,11 @@ body {
       margin-bottom: 20px; }
     .form__2nd .ui-selectmenu-button.ui-button {
       width: 45%; }
+  .form__simple {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 410px; }
   .form__header {
     font-size: 70px;
     -ms-flex-item-align: center;
