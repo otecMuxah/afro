@@ -1,4 +1,10 @@
 $(window).load(function() {
+    $('.login__username').on('click', function () {
+        $(this).toggleClass('active');
+    })
+
+
+
     $('.carousel').slick({
         infinite: false,
         slidesToShow: 5,
