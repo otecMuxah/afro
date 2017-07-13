@@ -26,6 +26,10 @@
             width: 45%;
         }
     }
+    &__simple {
+        justify-content: space-between;
+        max-width: 410px;
+    }
     &__header {
         font-size: 70px;
         align-self: center;
