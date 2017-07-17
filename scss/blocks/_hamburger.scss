@@ -1,0 +1,7 @@
+.hamburger {
+    display: none;
+    color: $color-white;
+    @include width850 {
+        display: block;
+    }
+}

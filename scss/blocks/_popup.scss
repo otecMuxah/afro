@@ -8,6 +8,24 @@
     align-items: center;
     justify-content: center;
     background: rgba(200,200,200,0.7);
+    font-size: 14px;
+    color: $color-black;
+    .ui-selectmenu-text {
+        font-size: 14px;
+        color: $color-black;
+        font-family: $font_light;
+    }
+    .ui-selectmenu-button.ui-button {
+        border-color: $color-gray-2;
+    }
+    .ui-button .ui-selectmenu-icon.ui-icon {
+        height: 7px;
+        top: 50%;
+        transform: translate(0,-50%);
+        &:before {
+            border-color: $color-gray-2 transparent transparent transparent;
+        }
+    }
     &__list {
         border-style: solid;
         border-width: 1px;
@@ -17,13 +35,16 @@
         min-width: 416px;
         min-height: 465px;
         color: $color-black;
+        padding: 25px 18px;
+        box-sizing: border-box;
     }
     &__checkbox {
-
+        margin-right: 20px;
     }
     &__item {
         display: flex;
         width: 100%;
+        margin-bottom: 20px;
     }
     &__field-name {
         flex: 0 0 33%;
