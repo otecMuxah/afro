@@ -1,8 +1,27 @@
 .navigation {
     display: flex;
+    @include width850 {
+        position: absolute;
+        display: none;
+        right: 0;
+        bottom: 0;
+        transform: translate(0,50%);
+        flex-direction: column;
+        background: $color-white;
+        border: 1px solid $color-gray-2;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    &.active {
+        display: flex;
+    }
     &__list {
         display: flex;
         align-items: center;
+        @include width850 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__item {
         margin-right: 30px;
@@ -11,7 +30,7 @@
             margin-left: 52px;
         }
         @include width850 {
-            margin-right: 8px;
+            margin: 0 0 20px 0;
             &:last-child {
                 margin-right: 0;
                 margin-left: 0;
@@ -25,8 +44,7 @@
         padding-left: 20px;
         position: relative;
         @include width850 {
-            font: 10px/11px $font_light;
-            padding-left: 10px;
+            color: $color-black;
         }
         @include width650 {
             font-size: 13px;

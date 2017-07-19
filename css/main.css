@@ -164,8 +164,8 @@ body {
     margin-right: -78px; }
     @media screen and (max-width: 1185px) {
       .header__nav-holder {
-        padding: 0 5px;
-        margin-right: 0; } }
+        margin-right: 0;
+        padding: 0 20px; } }
   .header__own-agency {
     color: #fff;
     text-decoration: underline; }
@@ -221,6 +221,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 850px) {
+    .navigation {
+      position: absolute;
+      display: none;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: translate(0, 50%);
+              transform: translate(0, 50%);
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      background: #fff;
+      border: 1px solid #aeb2be;
+      border-radius: 8px;
+      padding: 20px; } }
+  .navigation.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .navigation__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -228,6 +248,15 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media screen and (max-width: 850px) {
+      .navigation__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
   .navigation__item {
     margin-right: 30px; }
     .navigation__item:last-child {
@@ -235,7 +264,7 @@ body {
       margin-left: 52px; }
     @media screen and (max-width: 850px) {
       .navigation__item {
-        margin-right: 8px; }
+        margin: 0 0 20px 0; }
         .navigation__item:last-child {
           margin-right: 0;
           margin-left: 0; } }
@@ -247,8 +276,7 @@ body {
     position: relative; }
     @media screen and (max-width: 850px) {
       .navigation__link {
-        font: 10px/11px roboto-light, Arial, sans-serif;
-        padding-left: 10px; } }
+        color: #242327; } }
     @media screen and (max-width: 650px) {
       .navigation__link {
         font-size: 13px; } }
@@ -981,4 +1009,7 @@ body {
   color: #fff; }
   @media screen and (max-width: 850px) {
     .hamburger {
-      display: block; } }
+      display: block;
+      z-index: 3; } }
+  .hamburger.active {
+    color: #242327; }

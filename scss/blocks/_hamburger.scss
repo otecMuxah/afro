@@ -3,5 +3,9 @@
     color: $color-white;
     @include width850 {
         display: block;
+        z-index: 3;
+    }
+    &.active {
+        color: $color-black;
     }
 }

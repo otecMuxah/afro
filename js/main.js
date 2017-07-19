@@ -44,4 +44,8 @@ $(window).load(function() {
 
     });
     $('.form__select').selectmenu();
+    $('.hamburger').on('click', function () {
+        $('.navigation').toggleClass('active');
+        $(this).toggleClass('active');
+    })
 });
