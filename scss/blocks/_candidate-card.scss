@@ -95,4 +95,11 @@
     &__detail-value {
         font-family: $font;
     }
+    &__personal-info {
+        color: $color-black;
+        font-size: 12px;
+    }
+    strong {
+        font-family: $font;
+    }
 }

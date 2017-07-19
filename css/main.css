@@ -906,6 +906,11 @@ body {
             flex: 0 0 50%; }
   .candidate-card__detail-value {
     font-family: roboto-regular, Arial, sans-serif; }
+  .candidate-card__personal-info {
+    color: #242327;
+    font-size: 12px; }
+  .candidate-card strong {
+    font-family: roboto-regular, Arial, sans-serif; }
 
 .checkbox {
   display: -webkit-inline-box;
