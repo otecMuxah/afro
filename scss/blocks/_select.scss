@@ -1,0 +1,13 @@
+.ui-selectmenu-button.ui-button {
+    border-bottom: 1px solid #aeb2be;
+    width: 100%;
+    box-sizing: border-box;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: 0;
+        border: 0;
+        border-bottom: 1px solid #aeb2be;
+        background: none;
+    }
+}
