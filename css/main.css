@@ -909,8 +909,25 @@ body {
   .candidate-card__personal-info {
     color: #242327;
     font-size: 12px; }
-  .candidate-card strong {
-    font-family: roboto-regular, Arial, sans-serif; }
+  .candidate-card strong, .candidate-card__location, .candidate-card__email, .candidate-card__phone {
+    font-family: roboto-regular, Arial, sans-serif;
+    font-weight: 700; }
+  .candidate-card__image-svg {
+    width: 90px;
+    height: 115px;
+    fill: #82c450; }
+  .candidate-card__img-wrapper {
+    max-width: 180px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .checkbox {
   display: -webkit-inline-box;
@@ -1018,3 +1035,38 @@ body {
       z-index: 3; } }
   .hamburger.active {
     color: #242327; }
+
+.stars-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .stars-rating__item {
+    margin-right: 7px; }
+  .stars-rating__icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: #e5e7ea; }
+    .stars-rating__item.active .stars-rating__icon-svg {
+      fill: #ffbd01; }
+
+.whatsapp-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #242327; }
+  .whatsapp-share__icon-svg {
+    width: 30px;
+    height: 30px; }
+
+.title {
+  font: 14px roboto-regular, Arial, sans-serif;
+  color: #fff;
+  background: #6a65a9;
+  width: 100%;
+  padding: 10px 9px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin-bottom: 7px; }

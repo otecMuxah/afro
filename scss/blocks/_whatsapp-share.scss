@@ -1,0 +1,9 @@
+.whatsapp-share {
+    display: flex;
+    align-items: center;
+    color: $color-black;
+    &__icon-svg {
+        width: 30px;
+        height: 30px;
+    }
+}

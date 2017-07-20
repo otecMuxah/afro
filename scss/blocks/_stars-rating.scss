@@ -1,0 +1,14 @@
+.stars-rating {
+    display: flex;
+    &__item {
+        margin-right: 7px;
+    }
+    &__icon-svg {
+        width: 20px;
+        height: 20px;
+        fill: $color-gray;
+        .stars-rating__item.active & {
+            fill: #ffbd01;
+        }
+    }
+}
