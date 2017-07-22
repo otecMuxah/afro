@@ -11,6 +11,12 @@
         @include width650 {
             flex-wrap: wrap;
         }
+        &--more {
+            display: none;
+            &.active {
+                display: flex;
+            }
+        }
     }
     &__icon-holder {
         display: flex;
@@ -44,6 +50,15 @@
         color: $color-blue;
         display: flex;
         align-items: center;
+        &--less {
+            font-size: 14px;
+            color: $color-blue;
+            display: flex;
+            align-items: center;
+            .candidate-card__more-icon {
+                transform: rotate(-90deg);
+            }
+        }
     }
     &__more-icon {
         font-family: slick;

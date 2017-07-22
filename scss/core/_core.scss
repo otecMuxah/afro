@@ -8,7 +8,7 @@ body {
     color: $color-white;
 }
 .hidden {
-  display: none !important;
+  visibility: hidden !important;
 }
 .main-wrapper {
     display: flex;
