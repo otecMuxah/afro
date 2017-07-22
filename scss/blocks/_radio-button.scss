@@ -1,0 +1,36 @@
+.radio-button {
+    margin-left: 15px;
+    font-size: 12px;
+    &__label {
+        position: relative;
+        padding-left: 20px;
+        display: block;
+        cursor: pointer;
+        &:before,
+        &:after {
+            content: '';
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+            border: 1px $color-green solid;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            display: block;
+            position: absolute;
+        }
+        &:after {
+            width: 6px;
+            height: 6px;
+            background: $color-green;
+            left: 3px;
+            visibility: hidden;
+        }
+    }
+    &__input {
+        display: none;
+        &:checked ~ .radio-button__label:after {
+            visibility: visible;
+        }
+    }
+}

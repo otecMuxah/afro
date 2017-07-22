@@ -100,11 +100,13 @@
             <li class="popup__item">
                 <div class="popup__field-name">Preferred residency</div>
                 <div class="form__radio-holder">
-                    <label for="getin-radio">
-                        <input type="radio" name="getin" value="stay-in" id="getin-radio">stay-IN
+                    <label class="radio-button" for="getin-radio-popup">
+                        <input type="radio" name="getin" value="stay-in" id="getin-radio-popup">stay-IN
+                        <span class="radio-button__icon"></span>
                     </label>
-                    <label for="getout-radio">
-                        <input type="radio" name="getin" value="stay-out" id="getout-radio">stay-OUT
+                    <label for="getout-radio-popup" class="radio-button">
+                        <input type="radio" name="getin" value="stay-out" id="getout-radio-popup">stay-OUT
+                        <span class="radio-button__icon"></span>
                     </label>
                 </div>
             </li>
@@ -268,12 +270,17 @@
                         </select>
                     </div>
                     <div class="hire-now__radio-holder form__radio-holder">
-                        <label for="getin-radio">
-                            <input type="radio" name="getin" value="stay-in" id="getin-radio">stay-IN
-                        </label>
-                        <label for="getout-radio">
-                            <input type="radio" name="getin" value="stay-out" id="getout-radio">stay-OUT
-                        </label>
+                        <div class="radio-button">
+
+                            <input class="radio-button__input" type="radio" name="getin-radio" value="stay-in" id="getin-radio">
+                            <label  for="getin-radio" class="radio-button__label">stay-IN</label>
+                        </div>
+                        <div class="radio-button">
+
+                            <input class="radio-button__input" type="radio" name="getin-radio" value="stay-out" id="getout-radio">
+                            <label for="getout-radio" class="radio-button__label">stay-OUT</label>
+                        </div>
+
                     </div>
                 </div>
                 <div class="hire-now__buttons-holder">

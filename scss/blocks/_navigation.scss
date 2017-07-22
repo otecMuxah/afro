@@ -26,8 +26,8 @@
     &__item {
         margin-right: 30px;
         &:last-child {
-            margin-right: 0;
-            margin-left: 52px;
+            //margin-right: 0;
+            //margin-left: 52px;
         }
         @include width850 {
             margin: 0 0 20px 0;

@@ -262,9 +262,6 @@ body {
                 align-items: flex-start; } }
   .navigation__item {
     margin-right: 30px; }
-    .navigation__item:last-child {
-      margin-right: 0;
-      margin-left: 52px; }
     @media screen and (max-width: 850px) {
       .navigation__item {
         margin: 0 0 20px 0; }
@@ -742,7 +739,8 @@ body {
 
 .hire-now {
   padding: 0 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #252525; }
   .hire-now__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1090,6 +1088,37 @@ body {
       border: 1px solid #82c450; }
       .checkbox__input:checked ~ .checkbox__icon .checkbox__icon-svg {
         display: block; }
+
+.radio-button {
+  margin-left: 15px;
+  font-size: 12px; }
+  .radio-button__label {
+    position: relative;
+    padding-left: 20px;
+    display: block;
+    cursor: pointer; }
+    .radio-button__label:before, .radio-button__label:after {
+      content: '';
+      left: 0;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      border: 1px #82c450 solid;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      display: block;
+      position: absolute; }
+    .radio-button__label:after {
+      width: 6px;
+      height: 6px;
+      background: #82c450;
+      left: 3px;
+      visibility: hidden; }
+  .radio-button__input {
+    display: none; }
+    .radio-button__input:checked ~ .radio-button__label:after {
+      visibility: visible; }
 
 .popup {
   position: fixed;
