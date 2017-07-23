@@ -43,22 +43,36 @@ $(window).load(function() {
         ]
 
     });
+
     $('.form__select').selectmenu();
+
     $('.hamburger').on('click', function () {
         $('.navigation').toggleClass('active');
         $(this).toggleClass('active');
     });
 
     $('.candidate-card__more').on('click',function () {
-        // var link = '#' + this.dataset.card;
-        // console.log(link);
-        // $(link).addClass('active');
-        $(this).addClass('hidden');
-        $(this).parents('.candidate-card__wrapper').siblings('.candidate-card__wrapper--more').addClass('active');
+        // console.log($(this).text());
+        // if ($(this).text()) {
+        //     console.log($(this).text());
+        //     $(this).text('Less');
+        // } else if ($(this).text() === 'Less') {
+        //     $(this).text('More');
+        // }
+        $(this).toggleClass('candidate-card__more--less');
+        $(this).parents('.candidate-card__wrapper').siblings('.candidate-card__wrapper--more').toggleClass('active');
     });
 
-    $('.candidate-card__more--less').on('click', function () {
-        $(this).parents('.candidate-card__wrapper--more').siblings('.candidate-card__wrapper').find('.candidate-card__more').removeClass('hidden');
-        $(this).closest('.candidate-card__wrapper--more').removeClass('active');
-    })
+    // $('.candidate-card__more--less').on('click', function () {
+    //     $(this).parents('.candidate-card__wrapper--more').siblings('.candidate-card__wrapper').find('.candidate-card__more').removeClass('hidden');
+    //     $(this).closest('.candidate-card__wrapper--more').removeClass('active');
+    // });
+    $('.checkbox__text').on('click',function () {
+        $(this).find('.candidate-card__verified-popup').toggleClass('active');
+    });
+
+    $('.candidate-card__flag-svg').on('click',function () {
+        $(this).siblings('.candidate-card__verified-popup').toggleClass('active');
+    });
+
 });

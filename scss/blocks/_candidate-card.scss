@@ -59,6 +59,15 @@
                 transform: rotate(-90deg);
             }
         }
+        &--even-more {
+            font-size: 14px;
+            color: $color-blue;
+            display: flex;
+            align-items: center;
+            .candidate-card__more-icon {
+                transform: rotate(0deg);
+            }
+        }
     }
     &__more-icon {
         font-family: slick;
@@ -70,6 +79,16 @@
             content: "→";
             font-size: 30px;
         }
+    }
+    &__close-button {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__flag-svg {
+        width: 15px;
+        height: 20px;
+        fill: $color-gray;
     }
     &__close-button-svg {
         width: 27px;
@@ -200,6 +219,9 @@
                 transform: rotate(180deg);
             }
         }
+        &.active {
+            display: flex;
+        }
     }
     &__vetted {
         font-size: 12px;
@@ -216,5 +238,15 @@
         display: flex;
         padding: 8px;
         box-sizing: border-box;
+    }
+    &__flag-svg {
+        &.active {
+            fill: $color-yellow;
+        }
+    }
+    &__flag-holder {
+        .candidate-card__verified-popup {
+            transform: translate(40%, 0);
+        }
     }
 }

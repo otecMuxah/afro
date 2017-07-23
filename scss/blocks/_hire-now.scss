@@ -10,6 +10,10 @@
         flex: 0 0 100%;
         display: flex;
         justify-content: space-between;
+        .button:first-child {
+            flex: 1;
+            margin-right: 30px;
+        }
     }
     &__select-holder {
         display: flex;
@@ -55,6 +59,7 @@
         border-bottom: 1px solid $color-gray-2;
         width: 100%;
         box-sizing: border-box;
+        padding: .4em;
     }
     .ui-button .ui-selectmenu-icon.ui-icon:before {
         border-color: $color-gray-2 transparent transparent transparent;

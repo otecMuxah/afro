@@ -57,6 +57,9 @@
     <symbol id="star-icon" viewBox="0 0 933.91 958.08">
         <style>.cls-11{fill:#fff;}.cls-22{font-size:872.05px;fill:#282561;font-family: roboto-regular, Roboto Condensed;}.cls-33{fill:#81c350;}</style></defs><title>star</title><polygon class="cls-11" points="840.6 749.56 716.62 719.15 745.92 843.39 635.54 779.28 628.65 906.75 540.8 814.14 498.28 934.5 440.08 820.89 365.38 924.4 341.54 799 240.69 877.27 253.15 750.22 134.35 796.91 182.09 678.53 54.94 689.85 134.1 589.71 8.92 564.76 113.09 490.98 0 431.76 120.74 390.32 28.91 301.65 156.43 295.9 93.31 184.94 217.29 215.35 187.98 91.11 298.37 155.22 305.25 27.75 393.11 120.36 435.62 0 493.83 113.61 568.53 10.1 592.37 135.5 693.21 57.24 680.75 184.28 799.56 137.59 751.82 255.97 878.97 244.65 799.8 344.79 924.99 369.74 820.82 443.52 933.91 502.74 813.17 544.18 905 632.86 777.47 638.61 840.6 749.56"/><text class="cls-22" transform="translate(182.09 740.07) scale(1.47 1)">v</text><path class="cls-33" d="M638.09,422.64A84.65,84.65,0,1,1,553.44,338,84.65,84.65,0,0,1,638.09,422.64Z"/>
     </symbol>
+    <symbol id="icon-flag" viewBox="0 0 111.16 148.47">
+        <path d="M102.07,0H9.28A9.27,9.27,0,0,0,0,9.28V139.19a9.26,9.26,0,0,0,9.28,9.28,8.3,8.3,0,0,0,5.13-1.58l38.3-33a4.54,4.54,0,0,1,6.12,0l37.91,33a9.79,9.79,0,0,0,5.13,1.58,9.26,9.26,0,0,0,9.28-9.28V9.28A9.1,9.1,0,0,0,102.07,0Z"/><path d="M92.59,118.85,67.72,97.33l-9.08-7.9a4.55,4.55,0,0,0-6.12,0l-9.08,7.9L18.36,118.85V23.3a4.8,4.8,0,0,1,4.74-4.74H88.25A4.8,4.8,0,0,1,93,23.3v95.56Z"/>
+    </symbol>
 </svg>
 <div class="popup" style="display: none">
     <div class="popup__wrapper">
@@ -262,7 +265,14 @@
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
                                 </svg>
                             </span>
-                            Only verified profiles
+                            <span class="checkbox__text">Only verified profiles
+                                <div class="candidate-card__verified-popup">Diggz is constatntly working on vetting workers in our database. We verify workers by their request by meeting in person. Registered user can see only verified profiles by checking this box.
+Not registered yet?
+
+                                    <a href="#" class="button">Sign Up</a>
+                                </div>
+                            </span>
+
                         </label>
                         <select name="nanny" id="frequency" class=" form__select hire-now__select ">
                             <option value="">Occasionally</option>
@@ -271,7 +281,6 @@
                     </div>
                     <div class="hire-now__radio-holder form__radio-holder">
                         <div class="radio-button">
-
                             <input class="radio-button__input" type="radio" name="getin-radio" value="stay-in" id="getin-radio">
                             <label  for="getin-radio" class="radio-button__label">stay-IN</label>
                         </div>
@@ -288,6 +297,191 @@
                     <button class="button button--green hire-now__button" type="submit">Post Requset</button>
                 </div>
             </form>
+        </section>
+        <section class="candidate-card">
+            <div class="candidate-card__wrapper">
+                <div class="candidate-card__img-holder">
+                    <img src="img/Layer.jpg" alt="" class="candidate-card__img">
+                    <div class="candidate-card__verified">
+                        <svg>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#star-icon"></use>
+                        </svg>
+                        <div class="candidate-card__verified-popup">Candidate was verified by Diggz 02/05/2018</div>
+                    </div>
+                </div>
+
+                <div class="candidate-card__holder">
+                    <h2 class="candidate-card__name">Alice Montgomery</h2>
+                    <div class="candidate-card__details-holder">
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Looking for a job:</span>
+                            <span class="candidate-card__detail-value">Nanny in Nairobi</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Age:</span>
+                            <span class="candidate-card__detail-value">31 years</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Expirience:</span>
+                            <span class="candidate-card__detail-value">6 years</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Skills:</span>
+                            <span class="candidate-card__detail-value">nanny, cooking</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Availible from:</span>
+                            <span class="candidate-card__detail-value">now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="candidate-card__controls">
+                    <div class="candidate-card__close-button">
+                        <div class="candidate-card__flag-holder">
+                            <svg class="candidate-card__flag-svg">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-flag"></use>
+                            </svg>
+                            <div class="candidate-card__verified-popup">You can mark profiles for the future investigation. To save a list of choice you have to be authorized.</div>
+                        </div>
+
+                        <svg class="candidate-card__close-button-svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cancel-circle"></use>
+                        </svg>
+                    </div>
+                    <div class="candidate-card__icon-holder">
+                        <svg class="candidate-card__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maidIcon"></use>
+                        </svg>
+                        <svg class="candidate-card__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nannyIcon"></use>
+                        </svg>
+                    </div>
+                    <div class="candidate-card__more">More<span class="candidate-card__more-icon"></span>
+                    </div>
+                </div>
+            </div>
+            <!--More info on candidate-->
+            <div class="candidate-card__wrapper candidate-card__wrapper--more">
+                <div class="candidate-card__img"></div>
+                <div class="candidate-card__holder">
+                    <div class="candidate-card__details-holder">
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Residency:</span>
+                            <span class="candidate-card__detail-value">live-in</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Contract type:</span>
+                            <span class="candidate-card__detail-value">full-time</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Monthly salary:</span>
+                            <span class="candidate-card__detail-value"NNN KES</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Days-off: </span>
+                            <span class="candidate-card__detail-value">Sunday, Wednesday.</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Addtional: </span>
+                            <span class="candidate-card__detail-value">I'm very tollerant, good-natured person, and I like kids.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="candidate-card__controls">
+                    <div class="candidate-card__more--even-more">More<span class="candidate-card__more-icon"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="candidate-card">
+            <div class="candidate-card__wrapper">
+                <div class="candidate-card__img-holder">
+                    <img src="img/Layer.jpg" alt="" class="candidate-card__img">
+                    <div class="candidate-card__verified">
+                        <svg>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#star-icon"></use>
+                        </svg>
+                        <div class="candidate-card__verified-popup">Candidate was verified by Diggz 02/05/2018</div>
+                    </div>
+                </div>
+
+                <div class="candidate-card__holder">
+                    <h2 class="candidate-card__name">Alice Montgomery</h2>
+                    <div class="candidate-card__details-holder">
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Looking for a job:</span>
+                            <span class="candidate-card__detail-value">Nanny in Nairobi</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Age:</span>
+                            <span class="candidate-card__detail-value">31 years</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Expirience:</span>
+                            <span class="candidate-card__detail-value">6 years</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Skills:</span>
+                            <span class="candidate-card__detail-value">nanny, cooking</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Availible from:</span>
+                            <span class="candidate-card__detail-value">now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="candidate-card__controls">
+                    <div class="candidate-card__close-button">
+                        <svg class="candidate-card__close-button-svg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cancel-circle"></use>
+                        </svg>
+                    </div>
+                    <div class="candidate-card__icon-holder">
+                        <svg class="candidate-card__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maidIcon"></use>
+                        </svg>
+                        <svg class="candidate-card__icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nannyIcon"></use>
+                        </svg>
+                    </div>
+                    <div class="candidate-card__more" data-card="card1">More
+                        <span class="candidate-card__more-icon"></span>
+                    </div>
+                </div>
+            </div>
+            <!--More info on candidate-->
+            <div class="candidate-card__wrapper candidate-card__wrapper--more" id="card1">
+                <div class="candidate-card__img"></div>
+                <div class="candidate-card__holder">
+                    <div class="candidate-card__details-holder">
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Residency:</span>
+                            <span class="candidate-card__detail-value">live-in</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Contract type:</span>
+                            <span class="candidate-card__detail-value">full-time</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Monthly salary:</span>
+                            <span class="candidate-card__detail-value"NNN KES</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Days-off: </span>
+                            <span class="candidate-card__detail-value">Sunday, Wednesday.</span>
+                        </div>
+                        <div class="candidate-card__detail">
+                            <span class="candidate-card__detail-name">Addtional: </span>
+                            <span class="candidate-card__detail-value">I'm very tollerant, good-natured person, and I like kids.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="candidate-card__controls">
+                    <div class="candidate-card__more candidate-card__more--less">Less
+                        <span class="candidate-card__more-icon"></span>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="candidate-card">
             <div class="candidate-card__wrapper">
@@ -464,168 +658,6 @@
                 </div>
                 <div class="candidate-card__controls">
                     <div class="candidate-card__more candidate-card__more--less">Less
-                        <span class="candidate-card__more-icon"></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="candidate-card">
-            <div class="candidate-card__wrapper">
-                <img src="img/Layer.jpg" alt="" class="candidate-card__img">
-                <div class="candidate-card__holder">
-                    <h2 class="candidate-card__name">Alice Montgomery</h2>
-                    <div class="candidate-card__details-holder">
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Looking for a job:</span>
-                            <span class="candidate-card__detail-value">Nanny in Nairobi</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Age:</span>
-                            <span class="candidate-card__detail-value">31 years</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Expirience:</span>
-                            <span class="candidate-card__detail-value">6 years</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Skills:</span>
-                            <span class="candidate-card__detail-value">nanny, cooking</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Availible from:</span>
-                            <span class="candidate-card__detail-value">now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="candidate-card__controls">
-                    <div class="candidate-card__close-button">
-                        <svg class="candidate-card__close-button-svg">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cancel-circle"></use>
-                        </svg>
-                    </div>
-                    <div class="candidate-card__icon-holder">
-                        <svg class="candidate-card__icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maidIcon"></use>
-                        </svg>
-                        <svg class="candidate-card__icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nannyIcon"></use>
-                        </svg>
-                    </div>
-                    <div class="candidate-card__more">More
-                        <span class="candidate-card__more-icon"></span>
-                    </div>
-                </div>
-            </div>
-            <!--More info on candidate-->
-            <div class="candidate-card__wrapper candidate-card__wrapper--more" style="display: none">
-                <div class="candidate-card__img"></div>
-                <div class="candidate-card__holder">
-                    <div class="candidate-card__details-holder">
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Residency:</span>
-                            <span class="candidate-card__detail-value">live-in</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Contract type:</span>
-                            <span class="candidate-card__detail-value">full-time</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Monthly salary:</span>
-                            <span class="candidate-card__detail-value"NNN KES</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Days-off: </span>
-                            <span class="candidate-card__detail-value">Sunday, Wednesday.</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Addtional: </span>
-                            <span class="candidate-card__detail-value">I'm very tollerant, good-natured person, and I like kids.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="candidate-card__controls">
-                    <div class="candidate-card__more">More
-                        <span class="candidate-card__more-icon"></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="candidate-card">
-            <div class="candidate-card__wrapper">
-                <img src="img/Layer.jpg" alt="" class="candidate-card__img">
-                <div class="candidate-card__holder">
-                    <h2 class="candidate-card__name">Alice Montgomery</h2>
-                    <div class="candidate-card__details-holder">
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Looking for a job:</span>
-                            <span class="candidate-card__detail-value">Nanny in Nairobi</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Age:</span>
-                            <span class="candidate-card__detail-value">31 years</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Expirience:</span>
-                            <span class="candidate-card__detail-value">6 years</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Skills:</span>
-                            <span class="candidate-card__detail-value">nanny, cooking</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Availible from:</span>
-                            <span class="candidate-card__detail-value">now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="candidate-card__controls">
-                    <div class="candidate-card__close-button">
-                        <svg class="candidate-card__close-button-svg">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cancel-circle"></use>
-                        </svg>
-                    </div>
-                    <div class="candidate-card__icon-holder">
-                        <svg class="candidate-card__icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maidIcon"></use>
-                        </svg>
-                        <svg class="candidate-card__icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nannyIcon"></use>
-                        </svg>
-                    </div>
-                    <div class="candidate-card__more">More
-                        <span class="candidate-card__more-icon"></span>
-                    </div>
-                </div>
-            </div>
-            <!--More info on candidate-->
-            <div class="candidate-card__wrapper candidate-card__wrapper--more">
-                <div class="candidate-card__img"></div>
-                <div class="candidate-card__holder">
-                    <div class="candidate-card__details-holder">
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Residency:</span>
-                            <span class="candidate-card__detail-value">live-in</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Contract type:</span>
-                            <span class="candidate-card__detail-value">full-time</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Monthly salary:</span>
-                            <span class="candidate-card__detail-value"NNN KES</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Days-off: </span>
-                            <span class="candidate-card__detail-value">Sunday, Wednesday.</span>
-                        </div>
-                        <div class="candidate-card__detail">
-                            <span class="candidate-card__detail-name">Addtional: </span>
-                            <span class="candidate-card__detail-value">I'm very tollerant, good-natured person, and I like kids.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="candidate-card__controls">
-                    <div class="candidate-card__more">More
                         <span class="candidate-card__more-icon"></span>
                     </div>
                 </div>
