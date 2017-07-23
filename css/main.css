@@ -1380,3 +1380,36 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 48%;
             flex: 0 0 48%; }
+    .payment-form__list-holder:last-child {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .payment-form__list-holder:last-child .payment-form__list {
+        width: 50%;
+        list-style: none; }
+  .payment-form__list {
+    list-style: decimal;
+    padding-left: 30px; }
+  .payment-form__item--price {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #282461;
+    color: #fff;
+    font: 16px/18px roboto-regular, Arial, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto; }

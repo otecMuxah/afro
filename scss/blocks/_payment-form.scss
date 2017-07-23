@@ -14,5 +14,35 @@
     }
     &__list-holder {
         flex: 0 0 48%;
+        &:last-child {
+            flex: 0 0 100%;
+            display: flex;
+            justify-content: center;
+            .payment-form__list {
+                width: 50%;
+                list-style: none;
+            }
+        }
+    }
+    &__list {
+        list-style: decimal;
+        padding-left: 30px ;
+    }
+    &__item {
+        &--price {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: $color-blue;
+            color: $color-white;
+            font: 16px/18px $font;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+    &__form {
+
     }
 }
