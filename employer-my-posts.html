@@ -72,11 +72,7 @@
             </a>
             <div class="header__nav-holder">
                 <div class="breadcrumbs">
-                    <span class="header__own-agency">EMPLOYER PROFILE:</span>
-                    <ol class="breadcrumbs__list">
-                        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">general info</a></li>
-                        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">subscription</a></li>
-                    </ol>
+                    <span class="header__own-agency">VACANCY</span>
                 </div>
                 <nav class="navigation">
                     <ul class="navigation__list">
@@ -119,179 +115,241 @@
     <div class="content-wrapper">
         <section class="hire-now personal-form">
             <form>
-                <div class="personal-form__wrapper">
-                    <div class="personal-form__image-holder">
-                        <img class="personal-form__image" src="img/Layer.jpg" alt="">
-                        <input type="file" class="personal-form__input-image" placeholder="Upload profile picture">
-                        <span class="personal-form__upload-image">Upload profile picture</span>
-                        <span class="balloon">This picture will be used as your profile avatar.</span>
+                <div class="personal-form__wrapper personal-form__wrapper--table">
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Job type</div>
+                        <label for="nannyCheckbox" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="nannyCheckbox">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
+                            </span>
+                            Nanny
+                        </label>
+                        <label for="nannyCheckbox" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="nannyCheckbox">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
+                            </span>
+                            Nanny
+                        </label>
                     </div>
-                    <div class="personal-form__info-holder">
-                        <div class="personal-form__text-input-holder">
-                            <input type="text" class="text-input" placeholder="Name">
-                            <input type="text" class="text-input" placeholder="Surname">
+                    <div class="personal-form__row">
+                        <div class="personal-form__title"></div>
+                        <select name="nanny" id="nanny" class="form__select popup__select">
+                            <option value="1">Nanny</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                        <select name="nanny" id="nanny2" class="form__select popup__select">
+                            <option value="1">Nanny</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title"></div>
+                        <input type="text" class="text-input" placeholder="Street">
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Preferred residency</div>
+                        <div class="radio-button">
+                            <input class="radio-button__input" type="radio" name="stay" id="getin-radio1">
+                            <label  for="getin-radio1" class="radio-button__label">Stay in</label>
                         </div>
-                        <div class="personal-form__text-input-holder">Phone number (could be used as a login)</div>
-                        <div class="personal-form__text-input-holder personal-form__text-input-holder--narrow">
-                            <select class="form__select hire-now__select">
-                                <option value="0">Code</option>
-                                <option value="1">Employer</option>
-                            </select>
-                            <input type="tel" class="text-input" placeholder="0-000-000">
+                        <div class="radio-button">
+                            <input class="radio-button__input" type="radio" name="stay" id="getin-radio2">
+                            <label  for="getin-radio2" class="radio-button__label">Stay out</label>
                         </div>
-                        <div class="personal-form__text-input-holder">E-mail (could be used as a login)</div>
-                        <div class="personal-form__text-input-holder">
-                            <input type="text" class="text-input" placeholder="user@domain.com">
-                            <input type="text" class="text-input" placeholder="user@domain.com">
-                        </div>
-                        <div class="personal-form__text-input-holder personal-form__text-input-holder--narrow">
-                            <p class="personal-form__label">Nationality</p>
-                            <select class="form__select hire-now__select">
-                                <option value="1">Kenyan</option>
-                                <option value="2">Employer</option>
-                            </select>
-                        </div>
-                        <div class="personal-form__text-input-holder personal-form__text-input-holder--narrow">
-                            <p class="personal-form__label">City</p>
-                            <select class="form__select hire-now__select">
-                                <option value="1">Nairobi</option>
-                                <option value="2">Employer</option>
-                            </select>
-                        </div>
-                        <div class="personal-form__text-input-holder personal-form__text-input-holder--narrow">
-                            <p class="personal-form__label">Residence</p>
-                            <select class="form__select hire-now__select">
-                                <option value="1">Westlands</option>
-                                <option value="2">Employer</option>
-                            </select>
-                        </div>
-                        <div class="personal-form__text-input-holder personal-form__text-input-holder--narrow">
-                            <p class="personal-form__label">Day of birth</p>
-                            <select class="form__select hire-now__select">
-                                <option value="1">mon</option>
-                                <option value="2">Employer</option>
-                            </select>
-                            <select class="form__select hire-now__select">
-                                <option value="1">day</option>
-                                <option value="2">Employer</option>
-                            </select>
-                        </div>
-                        <div class="form__text-input-holder">
-                            <button class="button" type="submit">Save</button>
-                        </div>
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Contact type</div>
+                        <label for="fullTime" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="fullTime">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
+                            </span>
+                            Nanny
+                        </label>
+                        <label for="partTime" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="partTime">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
+                            </span>
+                            Nanny
+                        </label>
+                        <label for="occas" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="occas">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
+                            </span>
+                            Nanny
+                        </label>
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Starting from</div>
+                        <select name="nanny" id="day" class="form__select popup__select">
+                            <option value="1">day</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                        <select name="nanny" id="month" class="form__select popup__select">
+                            <option value="1">month</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                        <select name="nanny" id="year" class="form__select popup__select">
+                            <option value="1">year</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Salary in KES</div>
+                        <select name="nanny" id="salaryFreq" class="form__select popup__select">
+                            <option value="1">daily</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                        <input type="text" class="text-input" placeholder="Street">
+                    </div>
+                    <div class="personal-form__row">
+                        <textarea class="personal-form__textarea" placeholder="You can describe you requirements here in free words"></textarea>
+                    </div>
+                    <div class="personal-form__row personal-form__buttons-holder">
+                        <button class="button personal-form__button">Remove</button>
+                        <button class="button personal-form__button">Submit</button>
                     </div>
                 </div>
             </form>
         </section>
-        <section class="title">
-            <div class="breadcrumbs">
-                <ol class="breadcrumbs__list">
-                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">general info</a></li>
-                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">subscription</a></li>
-                </ol>
+        <section class="personal-form__status">
+            <div class="personal-form__wrapper personal-form__wrapper--table">
+                PUBLISHED ON 14:23 02 APRIL 2017
             </div>
+
         </section>
-        <section class="payment-form">
+        <section class="hire-now personal-form">
             <form>
-                <div class="payment-form__wrapper">
-                    <div class="payment-form__list-holder">
-                        <div class="radio-button">
-                            <input class="radio-button__input" type="radio" name="payment"  id="getin-radio">
-                            <label  for="getin-radio" class="radio-button__label">Post A Job Then Hire</label>
-                        </div>
-                        <ol class="payment-form__list">
-                            <li class="payment-form__item">
-                                Post a job.
-                            </li>
-                            <li class="payment-form__item">
-                                Receive up to twenty (20) responses from workers;
-                            </li>
-                            <li class="payment-form__item">
-                                Shortlist up to ten (10) best candidates.
-                            </li>
-                            <li class="payment-form__item payment-form__item--price">
-                                $3.5
-                            </li>
-
-                        </ol>
-                    </div>
-                    <div class="payment-form__list-holder">
-                        <div class="radio-button">
-                            <input class="radio-button__input" type="radio" name="payment" id="getin-radio1">
-                            <label  for="getin-radio1" class="radio-button__label">Search Then Hire+</label>
-                        </div>
-                        <ol class="payment-form__list">
-                            <li class="payment-form__item">
-                                Unlimited searches during subscription period;
-                            </li>
-                            <li class="payment-form__item">
-                                Unlimited addressing;
-                            </li>
-                            <li class="payment-form__item">
-                                Shortlist up to ten (10) best candidates
-                            </li>
-                            <li class="payment-form__item payment-form__item--price">
-                                $5.0
-                            </li>
-
-                        </ol>
-                    </div>
-                    <div class="payment-form__list-holder payment-form__list-holder--w100">
-                        <ul class="payment-form__list">
-                            <li class="payment-form__item">
-                                Subscription valid for 30 days or when you hire a worker, whichever happens sooner
-                            </li>
-                            <li class="payment-form__item">
-                                Access full profiles of candidates.
-                            </li>
-                            <li class="payment-form__item">
-                                Hold interviews.
-                            </li>
-                            <li class="payment-form__item">
-                                Select best candidate.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="personal-form__billing-holder">
-                        <div class="personal-form__texts-holder">
-                            <span class="personal-form__billing-text">Billing address
-                                 <span class="balloon">This address wiil not be shown on your public pages. It is forfinancial usage only.</span>
+                <div class="personal-form__wrapper personal-form__wrapper--table">
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Job type</div>
+                        <label for="nannyCheckbox" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="nannyCheckbox">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
                             </span>
-                            <span class="personal-form__billing-text">Payment method
-                                 <span class="balloon">We never store details of your credit card.</span>
+                            Nanny
+                        </label>
+                        <label for="nannyCheckbox" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="nannyCheckbox">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
                             </span>
+                            Nanny
+                        </label>
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title"></div>
+                        <select name="nanny" id="nanny" class="form__select popup__select">
+                            <option value="1">Nanny</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                        <select name="nanny" id="nanny2" class="form__select popup__select">
+                            <option value="1">Nanny</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title"></div>
+                        <input type="text" class="text-input" placeholder="Street">
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Preferred residency</div>
+                        <div class="radio-button">
+                            <input class="radio-button__input" type="radio" name="stay" id="getin-radio1">
+                            <label  for="getin-radio1" class="radio-button__label">Stay in</label>
                         </div>
-                        <div class="personal-form__info-holder">
-                            <div class="personal-form__text-input-holder">
-                                <select class="form__select hire-now__select">
-                                    <option value="1">Nairobi</option>
-                                    <option value="2">Employer</option>
-                                </select>
-                                <select class="form__select hire-now__select">
-                                    <option value="1">Westlands</option>
-                                    <option value="2">Employer</option>
-                                </select>
-                            </div>
-
-                            <div class="personal-form__text-input-holder">
-                                <input type="text" class="text-input" placeholder="Street">
-                            </div>
-
-                            <div class="personal-form__text-input-holder">
-                                <input type="text" class="text-input" placeholder="Bid#">
-                                <input type="text" class="text-input" placeholder="Postal code">
-                            </div>
-                            <div class="personal-form__text-input-holder">
-                                <ul class="personal-form__billing-list">
-                                    <li><a href="" class="visa"></a></li>
-                                    <li><a href="" class="mastercard"></a></li>
-                                    <li><a href="" class="paypal"></a></li>
-                                </ul>
-                            </div>
+                        <div class="radio-button">
+                            <input class="radio-button__input" type="radio" name="stay" id="getin-radio2">
+                            <label  for="getin-radio2" class="radio-button__label">Stay out</label>
                         </div>
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Contact type</div>
+                        <label for="fullTime" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="fullTime">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
+                            </span>
+                            Nanny
+                        </label>
+                        <label for="partTime" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="partTime">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
+                            </span>
+                            Nanny
+                        </label>
+                        <label for="occas" class="checkbox personal-form__checkbox">
+                            <input type="checkbox" class="checkbox__input" id="occas">
+                            <span class="checkbox__icon">
+                                <svg class="checkbox__icon-svg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use>
+                                </svg>
+                            </span>
+                            Nanny
+                        </label>
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Starting from</div>
+                        <select name="nanny" id="day" class="form__select popup__select">
+                            <option value="1">day</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                        <select name="nanny" id="month" class="form__select popup__select">
+                            <option value="1">month</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                        <select name="nanny" id="year" class="form__select popup__select">
+                            <option value="1">year</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                    </div>
+                    <div class="personal-form__row">
+                        <div class="personal-form__title">Salary in KES</div>
+                        <select name="nanny" id="salaryFreq" class="form__select popup__select">
+                            <option value="1">daily</option>
+                            <option value="2">Nanny</option>
+                        </select>
+                        <input type="text" class="text-input" placeholder="Street">
+                    </div>
+                    <div class="personal-form__row">
+                        <textarea class="personal-form__textarea" placeholder="You can describe you requirements here in free words"></textarea>
+                    </div>
+                    <div class="personal-form__row personal-form__buttons-holder">
+                        <button class="button personal-form__button">Remove</button>
+                        <button class="button personal-form__button">Submit</button>
                     </div>
                 </div>
             </form>
+        </section>
+        <section class="personal-form__status">
+            <div class="personal-form__wrapper personal-form__wrapper--table">
+                PUBLISHED ON 14:23 02 APRIL 2017
+            </div>
+
         </section>
         <section class="how-it-works">
             <a href="#" class="button how-it-works__button">Show More Results</a>
