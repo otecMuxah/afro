@@ -100,7 +100,8 @@ body {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   max-width: 613px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
 
 .header {
   top: 0;
@@ -840,6 +841,22 @@ body {
   .candidate-card__icon {
     fill: #82c450;
     width: 40px; }
+  .candidate-card__buttons-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -91px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .candidate-card__button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 48%;
+            flex: 1 1 48%;
+    position: relative;
+    margin-right: 20px; }
+    .candidate-card__button:last-child {
+      margin-right: 0; }
   .candidate-card__holder {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1515,7 +1532,12 @@ body {
   background-color: #5a5785;
   max-width: 305px;
   padding: 20px;
-  border-radius: 8px; }
+  border-radius: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  white-space: pre-line; }
   .balloon:after {
     content: '';
     position: absolute;
@@ -1525,3 +1547,20 @@ body {
     border-style: solid;
     border-width: 5px 0 5px 10px;
     border-color: transparent transparent transparent #5a5785; }
+  .balloon.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .balloon__buttons-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .balloon__title {
+    font: 24px/26px roboto-regular, Arial, sans-serif;
+    margin: 0 0 20px; }
+  .balloon__text {
+    font: 15px/17px roboto-regular, Arial, sans-serif;
+    margin: 0 0 20px; }

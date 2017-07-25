@@ -75,4 +75,8 @@ $(window).load(function() {
         $(this).siblings('.candidate-card__verified-popup').toggleClass('active');
     });
 
+    $('.button--trigger').on('click', function () {
+        $(this).find('.balloon').toggleClass('active');
+    });
+
 });
