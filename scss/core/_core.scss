@@ -16,12 +16,18 @@ body {
     position: relative;
     overflow-x: hidden;
     min-height: 100vh;
+    min-width: 375px;
+    box-sizing: border-box;
 }
 .content-wrapper {
     flex: 1 1 100%;
     max-width: 613px;
     margin: 0 auto;
-    width: 100%
+    width: 100%;
+    box-sizing: border-box;
+    @include width850 {
+        padding: 0 15px;
+    }
 }
 
 

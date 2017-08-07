@@ -11,6 +11,9 @@
         font-size: 13px;
         color: #262626;
         padding-top: 9px;
+        @include width850 {
+            padding: 9px 10px 0;
+        }
         ul {
             display: flex;
         }

@@ -15,3 +15,8 @@
         @content;
     }
 }
+@mixin width450 {
+    @media screen and (max-width: $res_450) {
+        @content;
+    }
+}

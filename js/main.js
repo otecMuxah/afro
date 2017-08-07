@@ -63,10 +63,6 @@ $(window).load(function() {
         $(this).parents('.candidate-card__wrapper').siblings('.candidate-card__wrapper--more').toggleClass('active');
     });
 
-    // $('.candidate-card__more--less').on('click', function () {
-    //     $(this).parents('.candidate-card__wrapper--more').siblings('.candidate-card__wrapper').find('.candidate-card__more').removeClass('hidden');
-    //     $(this).closest('.candidate-card__wrapper--more').removeClass('active');
-    // });
     $('.checkbox__text').on('click',function () {
         $(this).find('.candidate-card__verified-popup').toggleClass('active');
     });
@@ -77,6 +73,10 @@ $(window).load(function() {
 
     $('.button--trigger').on('click', function () {
         $(this).find('.balloon').toggleClass('active');
+    });
+
+    $('.candidate-card__close-button-holder').on('click', function () {
+        $(this).find('.candidate-card__verified-popup').toggleClass('active');
     });
 
 });

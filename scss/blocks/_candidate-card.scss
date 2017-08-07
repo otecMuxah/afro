@@ -1,8 +1,8 @@
 .candidate-card {
     background: $color-white;
-    border: 1px $color-gray solid;
+    border: 1px #a2a2a2 solid;
     border-radius: 6px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 18px;
     box-sizing: border-box;
     &__wrapper {
@@ -16,6 +16,11 @@
             &.active {
                 display: flex;
             }
+            .candidate-card__img {
+                @include width650 {
+                    width: 0;
+                }
+            }
         }
     }
     &__icon-holder {
@@ -23,12 +28,19 @@
     }
     &__icon {
         fill: $color-green;
-        width: 40px;
+        width: 25px;
+        height: 50px;
+    }
+    &__phone {
+        font: 15px/17px $font;
+        color: $color-black;
     }
     &__buttons-holder {
         display: flex;
-        margin-right: -91px;
         justify-content: space-between;
+        &--margin {
+            margin-right: -91px;
+        }
     }
     &__button {
         flex: 1 1 48%;
@@ -84,9 +96,10 @@
     }
     &__more-icon {
         font-family: slick;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         transform: rotate(90deg);
+        margin-left: 10px;
         display: inline-block;
         &:before {
             content: "→";
@@ -96,12 +109,22 @@
     &__close-button {
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: flex-end;
+        @include width650 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 70px;
+            justify-content: flex-end;
+        }
     }
     &__flag-svg {
-        width: 15px;
-        height: 20px;
+        width: 21px;
+        height: 25px;
         fill: $color-gray;
+        &.active {
+            fill: $color-yellow;
+        }
     }
     &__close-button-svg {
         width: 27px;
@@ -109,9 +132,13 @@
         fill: #989797;
         cursor: pointer;
         transition: 0.2s;
+        margin-left: 30px;
         &:hover {
             transition: 0.2s;
             fill: $color-blue;
+        }
+        @include width650 {
+            margin-left: 30px;
         }
     }
     &__img {
@@ -144,7 +171,7 @@
     &__name {
         font: 22px $font;
         color: #000000;
-        margin-bottom: 10px;
+        margin-bottom: 17px;
         .candidate-card__small-card & {
             font-size: 16px;
             margin-bottom: 5px;
@@ -157,7 +184,8 @@
     &__detail {
         display: flex;
         font-size: 12px;
-        margin-bottom: 8px;
+        margin-bottom: 11px;
+        position: relative;
         .candidate-card__small-card & {
             font-size: 9px;
             margin-bottom: 4px;
@@ -167,6 +195,17 @@
             border-radius: 8px;
             padding: 10px;
             box-sizing: border-box;
+        }
+        &--bottom-line {
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: #aeb2be;
+            }
         }
     }
     &__detail-name,
@@ -183,10 +222,11 @@
     strong,
     &__location,
     &__email,
-    &__phone {
+    &__phone,
+    &__id {
         font-family: $font;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 13px;
     }
     &__image-svg {
         width: 90px;
@@ -198,7 +238,8 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-bottom: 18px;
         @include width650 {
             flex: 0 0 100%;
             max-width: 100%;
@@ -210,7 +251,7 @@
         position: absolute;
         top: 0;
         left: -20px;
-        transform: translate(-100%,0);
+        transform: translate(-100%, 0);
         padding: 35px 20px;
         border-radius: 8px;
         width: 313px;
@@ -218,7 +259,10 @@
         display: none;
         flex-direction: column;
         @include width1185 {
-            transform: translate(57%,0);
+            transform: translate(57%, 0);
+        }
+        @include width650 {
+            transform: translate(12%, 0);
         }
         .candidate-card__verified:hover & {
             display: block;
@@ -244,7 +288,7 @@
             position: absolute;
             right: 0;
             top: 0;
-            transform: translate(100%,0);
+            transform: translate(100%, 0);
             height: 100%;
             width: 21px;
             z-index: 0;
@@ -255,28 +299,46 @@
     }
     &__vetted {
         font-size: 12px;
+        margin-bottom: 30px;
+        @include width650 {
+            margin-bottom: 10px;
+        }
     }
     &__small-card {
         position: relative;
         border-radius: 10px;
-        background-image: -moz-linear-gradient( 90deg, rgb(236,236,236) 0%, rgb(255,255,255) 100%);
-        background-image: -webkit-linear-gradient( 90deg, rgb(236,236,236) 0%, rgb(255,255,255) 100%);
-        background-image: -ms-linear-gradient( 90deg, rgb(236,236,236) 0%, rgb(255,255,255) 100%);
+        background-image: -moz-linear-gradient(90deg, rgb(236, 236, 236) 0%, rgb(255, 255, 255) 100%);
+        background-image: -webkit-linear-gradient(90deg, rgb(236, 236, 236) 0%, rgb(255, 255, 255) 100%);
+        background-image: -ms-linear-gradient(90deg, rgb(236, 236, 236) 0%, rgb(255, 255, 255) 100%);
         box-shadow: 0px 6px 27px 0px rgba(0, 0, 0, 0.46);
         width: 280px;
         height: 142px;
         display: flex;
         padding: 8px;
         box-sizing: border-box;
-    }
-    &__flag-svg {
-        &.active {
-            fill: $color-yellow;
+        @include width650 {
+            margin: 0 auto;
         }
     }
+
     &__flag-holder {
         .candidate-card__verified-popup {
             transform: translate(40%, 0);
+        }
+    }
+    &__contacts-left {
+        margin-bottom: 40px;
+        &--number {
+            font-size: 16px;
+            color: $color-white;
+            background: $color-green;
+            width: 25px;
+            height: 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 5px;
         }
     }
 }

@@ -1,7 +1,8 @@
 .hire-now {
     padding: 0 10px;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     color: #252525;
+
     &__form {
         display: flex;
         flex-wrap: wrap;
@@ -20,27 +21,38 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        margin-bottom: 15px;
+        margin-bottom: 7px;
     }
     &__select-wrapper {
         flex: 0 0 23%;
         &:first-child {
             flex: 0 0 48%;
+            @include width650 {
+                flex: 1;
+            }
+        }
+        @include width650 {
+            flex: 1;
         }
     }
     &__radio-holder {
         display: flex;
         justify-content: flex-end;
         .radio-button {
-            flex: 1 1 24%;
+
         }
     }
     &__img-svg {
         height: 135px;
         width: 111px;
+        margin-right: 8px;
+        margin-bottom: 10px;
     }
     &__image {
         flex: 0 0 150px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
         img {
             width: 180px;
             height: 130px;
@@ -70,14 +82,19 @@
     }
 
     &__holder {
-        flex: 0 0 calc(100% - 150px);
-        .worker-search & {
-            flex: 0 0 calc(100% - 200px);
+        flex: 0 0 calc(100% - 204px);
+        //.worker-search & {
+        //    flex: 0 0 calc(100% - 200px);
+        //}
+        @include width650 {
+            width: 100%;
+            flex: 1 !important;
         }
     }
     &__title {
         font: 48px $font_thin;
         color: #636363;
+        margin-bottom: 4px;
     }
     &__label {
         flex: 0 0 50%;

@@ -5,34 +5,42 @@
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     font-size: 14px;
+    margin-bottom: 5px;
     padding: {
-        top: 20px;
-        bottom: 20px;
+        top: 46px;
+        bottom: 15px;
     };
     &__wrapper {
         display: flex;
         &--table {
             flex-direction: column;
-            max-width: 415px;
+            max-width: 385px;
             margin: 0 auto;
         }
     }
     &__row {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     &__textarea {
         width: 100%;
         resize: none;
+        height: 100px;
+        margin: 19px 0;
     }
     &__buttons-holder {
         justify-content: space-between;
+    }
+    &__checkbox {
+        margin-right: 10px;
     }
     &__button {
         flex: 0 0 45%;
     }
     &__title {
-        flex: 0 0 33%;
+        flex: 0 0 40%;
+        display: flex;
+        align-items: center;
     }
     &__status {
         text-align: center;
@@ -43,9 +51,9 @@
         border-color: #a2a2a2;
         border-radius: 5px;
         background-color: white;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
+        padding-top: 5px;
+        padding-bottom: 6px;
+        margin-bottom: 30px;
     }
     &__image-holder {
         flex: 0 0 180px;
@@ -66,17 +74,19 @@
             display: block;
         }
     }
-    select,
-    input,
-    p {
+
+    &__label {
         flex: 0 0 47%;
-        width: 47%;
+        &--flex {
+            flex: 1 1 47% !important;
+        }
     }
     &__text-input-holder {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 15px;
+        overflow: hidden;
         &--narrow {
             width: 50%;
         }

@@ -109,7 +109,7 @@
         <img src="img/main-banner-layer.png" alt="" class="main-banner__layer-img">
         <div class="main-banner__form">
             <!--form start-->
-            <form class="form" style="display: none">
+            <form class="form">
                 <h1 class="form__header">Get job now</h1>
                 <div class="form__select-holder">
                     <select name="nanny" id="nanny" class="form__select">
@@ -123,12 +123,15 @@
                     </select>
                 </div>
                 <div class="form__radio-holder">
-                    <label for="getin-radio">
-                        <input type="radio" name="getin" value="stay-in" id="getin-radio">stay-IN
-                    </label>
-                    <label for="getout-radio">
-                        <input type="radio" name="getin" value="stay-out" id="getout-radio">stay-OUT
-                    </label>
+                    <div class="radio-button">
+                        <input class="radio-button__input" type="radio" name="getin-radio" value="stay-in" id="getin-radio">
+                        <label  for="getin-radio" class="radio-button__label">stay-IN</label>
+                    </div>
+                    <div class="radio-button">
+
+                        <input class="radio-button__input" type="radio" name="getin-radio" value="stay-out" id="getout-radio">
+                        <label for="getout-radio" class="radio-button__label">stay-OUT</label>
+                    </div>
                 </div>
                 <div class="form__buttons-holder">
                     <button type="submit" class="form__button button">Search</button>
@@ -198,7 +201,7 @@
                 </div>
             </form>
             <!--forgotten form (u`r free to change tag name)-->
-            <form class="form form__simple">
+            <form class="form form__simple" style="display: none">
                 <div class="form__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, asperiores autem dolorum in ipsa iusto libero, magnam mollitia, nisi praesentium provident quia rerum similique. Aperiam blanditiis incidunt nihil nobis! Hic!!<br><br>
                     Are you looking for a nanny or housekeeper in Kenya? Or maybe you are an excellent nanny or fantastic housekeeper?
                 </div>

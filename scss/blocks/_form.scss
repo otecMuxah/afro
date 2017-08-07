@@ -8,6 +8,10 @@
     padding: 18px 16px;
     box-sizing: border-box;
     transform: translate(-4%,7%);
+    @include width850 {
+        max-width: 100%;
+        transform: translate(0,0);
+    }
     &--hire {
         transform: translate(-5%, 7%);
     }
@@ -46,6 +50,7 @@
     &__radio-holder {
         font-size: 17px;
         margin-bottom: 33px;
+        display: flex;
     }
     &__buttons-holder {
         display: flex;
@@ -55,6 +60,10 @@
             flex: 0 0 31%;
             &:first-child {
                 flex: 0 0 65%;
+            }
+            @include width850 {
+                flex:1 !important;
+                margin: 0 7px;
             }
         }
     }
@@ -71,6 +80,7 @@
     }
     &__image {
         height: 108px;
+        width: 104px;
         fill: $color-white;
     }
 

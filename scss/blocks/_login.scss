@@ -1,4 +1,15 @@
 .login {
+    &--holder {
+        @include width850 {
+            display: flex;
+            flex-direction: column;
+        }
+        .navigation__link {
+            @include width850  {
+                margin-bottom: 10px;
+            }
+        }
+    }
     &__username-holder {
         position: relative;
         display: flex;

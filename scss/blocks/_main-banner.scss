@@ -31,5 +31,12 @@
         z-index: 2;
 
     }
-
+    .ui-selectmenu-text {
+        font-size: 22px;
+        color: #ffea00;
+    }
+    .ui-selectmenu-button.ui-button:last-child .ui-selectmenu-text {
+        font-size: 22px;
+        color: #eaff00;
+    }
 }

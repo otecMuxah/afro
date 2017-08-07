@@ -23,8 +23,9 @@
         flex: 0 0 180px;
     }
     &__frame-text {
-        font: 26px/31px $font;
+        font: 26px/31px $font_black;
         background: #dcdae8;
+        color: #9b98a9;
         padding: 20px 10px;
         display: block;
         width: 180px;
@@ -62,7 +63,7 @@
         }
     }
     .slick-prev, .slick-next {
-        top: -10%;
+        top: -17%;
         width: 30px;
         height: 30px;
         &:hover:before {
@@ -76,13 +77,10 @@
         transition: 0.2s;
     }
     .slick-next {
-        right: -13%;
+        right: -124px;
     }
     .slick-prev {
         left: auto;
-        right: -9%;
-        @include width850 {
-            right: 0;
-        }
+        right: -84px;
     }
 }

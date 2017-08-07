@@ -7,10 +7,12 @@
     font-size: 14px;
     color: $color-black;
     padding: 20px;
+    margin-bottom: 20px;
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
     &__list-holder {
         flex: 0 0 48%;
@@ -23,12 +25,18 @@
                 list-style: none;
             }
         }
+        &--w100 {
+            flex: 0 0 50%;
+            margin: 0 auto;
+        }
     }
     &__list {
         list-style: decimal;
         padding-left: 30px ;
+        margin-bottom: 15px;
     }
     &__item {
+        margin-bottom: 10px;
         &--price {
             width: 45px;
             height: 45px;
@@ -41,9 +49,24 @@
             justify-content: center;
             margin: 0 auto;
         }
+        &:last-child {
+            margin-bottom: 20px;
+        }
     }
     &__form {
 
     }
-
+    .radio-button {
+        font-family: $font_black;
+        margin-bottom: 15px;
+    }
+    .ui-button .ui-selectmenu-icon.ui-icon {
+        top: 6px;
+        &:before {
+            border-color: $color-gray-2 transparent transparent transparent;
+        }
+    }
+    .candidate-card__buttons-holder {
+        justify-content: center;
+    }
 }
