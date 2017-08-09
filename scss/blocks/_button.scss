@@ -18,6 +18,9 @@
         background: $color-green;
         color: $color-blue;
     }
+    &:focus {
+        outline: 0;
+    }
     &--green {
         background: $color-green;
         color: $color-blue;

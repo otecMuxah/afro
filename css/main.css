@@ -199,6 +199,9 @@ body {
     right: 45px;
     font: 17px roboto-light, Arial, sans-serif;
     color: #282461; }
+    @media screen and (max-width: 650px) {
+      .header__enter-employer {
+        right: 0; } }
 
 .footer {
   display: -webkit-box;
@@ -345,16 +348,16 @@ body {
 .login__dropdown {
   position: absolute;
   bottom: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(104%);
+          transform: translateY(104%);
   border-width: 1px;
   border-color: #b7b7b7;
   border-style: solid;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   background-color: white;
   padding: 13px 2px;
   display: none; }
-  .login__username.active ~ .login__dropdown {
+  .login__username-holder.active .login__dropdown {
     display: block; }
 
 .login__link {
@@ -390,6 +393,8 @@ body {
     transition: 0.2s;
     background: #82c450;
     color: #282461; }
+  .button:focus {
+    outline: 0; }
   .button--green {
     background: #82c450;
     color: #282461; }
@@ -1093,6 +1098,8 @@ body {
     .candidate-card__small-card .candidate-card__img {
       width: 102px;
       height: 117px; }
+    .candidate-card__wrapper--more .candidate-card__img {
+      height: auto; }
   @media screen and (max-width: 650px) {
     .candidate-card__img-holder {
       -webkit-box-flex: 0;
@@ -1534,7 +1541,10 @@ ui-selectmenu-icon.ui-icon {
   padding: 6px 0;
   -webkit-box-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+  font: 14px/16px roboto-light, Arial, sans-serif;
+  font: 14px/16px roboto-light, Arial, sans-serif;
+  color: #242327; }
   .text-input::-webkit-input-placeholder {
     color: #7e7ca0; }
   .text-input:-ms-input-placeholder {

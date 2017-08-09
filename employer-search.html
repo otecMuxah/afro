@@ -98,19 +98,19 @@
             </li>
             <li class="popup__item">
                 <div class="popup__field-name"></div>
-                <input type="text" class="form__text-input popup__text-input">
+                <input type="text" class="form__text-input popup__text-input text-input">
             </li>
             <li class="popup__item">
                 <div class="popup__field-name">Preferred residency</div>
                 <div class="form__radio-holder">
-                    <label class="radio-button" for="getin-radio-popup">
-                        <input type="radio" name="getin" value="stay-in" id="getin-radio-popup">stay-IN
-                        <span class="radio-button__icon"></span>
-                    </label>
-                    <label for="getout-radio-popup" class="radio-button">
-                        <input type="radio" name="getin" value="stay-out" id="getout-radio-popup">stay-OUT
-                        <span class="radio-button__icon"></span>
-                    </label>
+                    <div class="radio-button">
+                        <input class="radio-button__input" type="radio" name="stay" id="getin-radio1">
+                        <label  for="getin-radio1" class="radio-button__label">Stay in</label>
+                    </div>
+                    <div class="radio-button">
+                        <input class="radio-button__input" type="radio" name="stay" id="getin-radio2">
+                        <label  for="getin-radio2" class="radio-button__label">Stay out</label>
+                    </div>
                 </div>
             </li>
             <li class="popup__item">
@@ -165,7 +165,7 @@
                     <option value="1">Daily</option>
                     <option value="2">Nairoby</option>
                 </select>
-                <input type="text" class="form__text-input popup__text-input">
+                <input type="text" class="form__text-input popup__text-input text-input">
             </li>
             <li class="popup__item">
                 <textarea class="popup__textarea" name="x" placeholder="You can describe you requirements here in free words" cols="30" rows="10"></textarea>

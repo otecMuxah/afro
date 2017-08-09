@@ -148,6 +148,9 @@
             width: 102px;
             height: 117px;
         }
+        .candidate-card__wrapper--more & {
+            height: auto;
+        }
     }
     &__img-holder {
         @include width650 {

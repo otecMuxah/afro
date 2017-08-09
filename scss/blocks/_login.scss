@@ -15,9 +15,6 @@
         display: flex;
         align-items: center;
     }
-    &__username {
-
-    }
     &__icon {
         margin-right: 5px;
         position: static;
@@ -26,16 +23,15 @@
     &__dropdown {
         position: absolute;
         bottom:0;
-        transform: translateY(100%);
+        transform: translateY(104%);
         border-width: 1px;
         border-color: rgb(183, 183, 183);
         border-style: solid;
-        border-radius: 10px;
+        border-radius: 0 0 10px 10px;
         background-color: rgb(255, 255, 255);
         padding: 13px 2px;
         display: none;
-
-        .login__username.active ~ & {
+        .login__username-holder.active & {
             display: block;
         }
     }
