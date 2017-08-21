@@ -24,6 +24,7 @@
     }
     &.active {
         display: flex;
+        z-index: 2;
     }
     &__buttons-holder {
         display: flex;

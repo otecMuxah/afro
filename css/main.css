@@ -1813,7 +1813,8 @@ ui-selectmenu-icon.ui-icon {
   .balloon.active {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    z-index: 2; }
   .balloon__buttons-holder {
     display: -webkit-box;
     display: -ms-flexbox;
