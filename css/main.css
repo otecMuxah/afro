@@ -316,19 +316,20 @@ body {
       .navigation__icon {
         width: 8px; } }
 
-@media screen and (max-width: 850px) {
-  .login--holder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
-
-@media screen and (max-width: 850px) {
-  .login--holder .navigation__link {
-    margin-bottom: 10px; } }
+.login--holder {
+  position: relative; }
+  @media screen and (max-width: 850px) {
+    .login--holder {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  @media screen and (max-width: 850px) {
+    .login--holder .navigation__link {
+      margin-bottom: 10px; } }
 
 .login__username-holder {
   position: relative;
@@ -356,15 +357,17 @@ body {
   border-radius: 0 0 10px 10px;
   background-color: white;
   padding: 13px 2px;
-  display: none; }
-  .login__username-holder.active .login__dropdown {
+  display: none;
+  right: 0; }
+  .login--holder.active .login__dropdown {
     display: block; }
 
 .login__link {
   font: 12px/14px roboto-regular, Arial, sans-serif;
   color: #242327;
   padding: 3px 18px 5px;
-  display: block; }
+  display: block;
+  white-space: nowrap; }
   .login__link:hover {
     background: #82c450; }
 
@@ -401,6 +404,8 @@ body {
     .button--green:hover {
       background-color: #282461;
       color: #fff; }
+  .button--centered {
+    margin: 0 auto; }
 
 .main-banner {
   background: url("../img/main-banner.jpg") no-repeat;
@@ -1264,8 +1269,11 @@ body {
       .candidate-card__small-card {
         margin: 0 auto; } }
   .candidate-card__flag-holder .candidate-card__verified-popup {
-    -webkit-transform: translate(40%, 0);
-            transform: translate(40%, 0); }
+    -webkit-transform: translate(60%, 0);
+            transform: translate(60%, 0); }
+  .candidate-card__flag-holder:hover svg {
+    fill: #ffd400;
+    cursor: pointer; }
   .candidate-card__contacts-left {
     margin-bottom: 40px; }
     .candidate-card__contacts-left--number {
@@ -1311,6 +1319,8 @@ body {
             justify-content: center;
     margin-right: 5px;
     box-sizing: border-box; }
+    .personal-form__three-items .checkbox__icon {
+      margin-right: 1px; }
   .checkbox__icon-svg {
     height: 10px;
     width: 10px;
@@ -1418,7 +1428,11 @@ body {
     padding: 25px 18px;
     box-sizing: border-box; }
   .popup__checkbox {
-    margin-right: 20px; }
+    margin-right: 20px;
+    white-space: nowrap; }
+    .personal-form__three-items .popup__checkbox {
+      font-size: 12px;
+      margin-right: 5px; }
   .popup__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1456,7 +1470,8 @@ body {
     width: 20px;
     height: 20px;
     fill: #e5e7ea; }
-    .stars-rating__item.active .stars-rating__icon-svg {
+    .stars-rating__item.active .stars-rating__icon-svg,
+    .stars-rating__item:hover .stars-rating__icon-svg {
       fill: #ffbd01; }
 
 .whatsapp-share {

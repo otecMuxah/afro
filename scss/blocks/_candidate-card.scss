@@ -326,7 +326,11 @@
 
     &__flag-holder {
         .candidate-card__verified-popup {
-            transform: translate(40%, 0);
+            transform: translate(60%, 0);
+        }
+        &:hover svg {
+            fill: $color-yellow;
+            cursor: pointer;
         }
     }
     &__contacts-left {

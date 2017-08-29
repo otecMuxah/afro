@@ -8,8 +8,9 @@
         width: 20px;
         height: 20px;
         fill: $color-gray;
-        .stars-rating__item.active & {
+        .stars-rating__item.active &,
+        .stars-rating__item:hover & {
             fill: #ffbd01;
-        }
+        }  
     }
 }

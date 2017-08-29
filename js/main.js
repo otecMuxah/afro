@@ -1,6 +1,6 @@
 $(window).load(function() {
     $('.login__username').on('click', function () {
-        $(this).toggleClass('active');
+        $(this).closest('.login--holder').toggleClass('active');
     })
 
 

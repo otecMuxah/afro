@@ -102,12 +102,25 @@
                         </a></li>
                     </ul>
                     <div class="login--holder">
-                        <a href="#" class="navigation__link">Login
+                        <span href="#" class="navigation__link login__username">Login
                             <svg class="navigation__icon">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#loginIcon"></use>
                             </svg>
-                        </a>
-                        <a href="#" class="navigation__link">Login
+                        </span>
+                        <div class="login__dropdown">
+                            <form>
+                                <div class="personal-form__text-input-holder">
+                                    <input type="text" class="text-input" placeholder="Login">
+                                </div>
+                                <div class="personal-form__text-input-holder">
+                                    <input type="text" class="text-input" placeholder="Password">
+                                </div>
+                                <div class="form__text-input-holder">
+                                    <button class="button button--centered" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <a href="#" class="navigation__link">Logout
                             <svg class="navigation__icon">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#loginIcon"></use>
                             </svg>
@@ -347,16 +360,16 @@
                         </div>
                         <div class="personal-form__text-input-holder">
                             <p class="personal-form__label">Preferred residency</p>
-                            <label class="radio-button" for="getin-radio-popup">
-                                <input type="radio" name="getin" value="stay-in" id="getin-radio-popup">stay-IN
-                                <span class="radio-button__icon"></span>
-                            </label>
-                            <label for="getout-radio-popup" class="radio-button">
-                                <input type="radio" name="getin" value="stay-out" id="getout-radio-popup">stay-OUT
-                                <span class="radio-button__icon"></span>
-                            </label>
+                            <div class="radio-button">
+                                <input class="radio-button__input" type="radio" name="pets"  id="pets-yes">
+                                <label  for="pets-yes" class="radio-button__label">Yes</label>
+                            </div>
+                            <div class="radio-button">
+                                <input class="radio-button__input" type="radio" name="pets"  id="pets-no">
+                                <label  for="pets-no" class="radio-button__label">No</label>
+                            </div>
                         </div>
-                        <div class="personal-form__text-input-holder">
+                        <div class="personal-form__text-input-holder personal-form__three-items">
                             <p class="personal-form__label">Contract type</p>
                             <label for="fullTimeCheckbox" class="checkbox popup__checkbox">
                                 <input type="checkbox" class="checkbox__input" id="fullTimeCheckbox">
@@ -511,6 +524,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="form__text-input-holder">
+                    <button class="button button--centered" type="submit">Submit</button>
                 </div>
             </form>
         </section>

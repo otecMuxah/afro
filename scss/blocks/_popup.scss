@@ -40,6 +40,11 @@
     }
     &__checkbox {
         margin-right: 20px;
+        white-space: nowrap;
+        .personal-form__three-items & {
+            font-size: 12px;
+            margin-right: 5px;
+        }
     }
     &__item {
         display: flex;
