@@ -78,5 +78,8 @@ $(window).load(function() {
     $('.candidate-card__close-button-holder').on('click', function () {
         $(this).find('.candidate-card__verified-popup').toggleClass('active');
     });
+    $('.personal-form__title--hint').on('click', function () {
+        $(this).find('.candidate-card__verified-popup').toggleClass('active');
+    })
 
 });

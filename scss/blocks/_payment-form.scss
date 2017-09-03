@@ -33,13 +33,13 @@
     &__list {
         list-style: decimal;
         padding-left: 30px ;
-        margin-bottom: 15px;
+        margin-bottom: 40px;
     }
     &__item {
-        margin-bottom: 10px;
+        margin-bottom: 3px;
         &--price {
-            width: 45px;
-            height: 45px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background: $color-blue;
             color: $color-white;
@@ -47,7 +47,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto;
+            margin: 30px auto 0;
+            span {
+                margin: 2px 0 0 -2px;
+            }
         }
         &:last-child {
             margin-bottom: 20px;

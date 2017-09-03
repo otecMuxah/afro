@@ -299,6 +299,9 @@
         &.active {
             display: flex;
         }
+        .button {
+            margin-top: 30px;
+        }
     }
     &__vetted {
         font-size: 12px;

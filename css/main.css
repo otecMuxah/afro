@@ -1247,6 +1247,8 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+    .candidate-card__verified-popup .button {
+      margin-top: 30px; }
   .candidate-card__vetted {
     font-size: 12px;
     margin-bottom: 30px; }
@@ -1592,7 +1594,7 @@ ui-selectmenu-icon.ui-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
   .personal-form__textarea {
     width: 100%;
     resize: none;
@@ -1618,6 +1620,21 @@ ui-selectmenu-icon.ui-icon {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .personal-form__title--hint {
+      position: relative; }
+      .personal-form__title--hint:before {
+        content: '?';
+        position: absolute;
+        font-size: 10px;
+        width: 12px;
+        height: 12px;
+        text-align: center;
+        right: 20px;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+        border-radius: 50%;
+        border: 1px #82c450 solid; }
   .personal-form__status {
     text-align: center;
     font-size: 18px;
@@ -1642,12 +1659,21 @@ ui-selectmenu-icon.ui-icon {
             flex: 1;
     padding-top: 65px; }
   .personal-form__image {
-    max-width: 180px; }
+    max-width: 180px;
+    margin-bottom: 20px; }
+  .personal-form__rows {
+    margin-bottom: 30px; }
   .personal-form__input-image {
     position: absolute;
     opacity: 0; }
     .personal-form__input-image:hover ~ .balloon {
       display: block; }
+  .personal-form__header {
+    font-size: 24px;
+    color: #282461; }
+  .personal-form__sub-header {
+    font-size: 12px;
+    color: #f70b0b; }
   .personal-form__label {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 47%;
@@ -1672,6 +1698,19 @@ ui-selectmenu-icon.ui-icon {
       width: 50%; }
   .personal-form__input-image {
     width: 180px !important; }
+  .personal-form__upload-image--hint:before {
+    content: '?';
+    position: absolute;
+    font-size: 10px;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    right: 26px;
+    top: 49%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    border-radius: 50%;
+    border: 1px #82c450 solid; }
   .personal-form__billing-holder {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1764,12 +1803,12 @@ ui-selectmenu-icon.ui-icon {
   .payment-form__list {
     list-style: decimal;
     padding-left: 30px;
-    margin-bottom: 15px; }
+    margin-bottom: 40px; }
   .payment-form__item {
-    margin-bottom: 10px; }
+    margin-bottom: 3px; }
     .payment-form__item--price {
-      width: 45px;
-      height: 45px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background: #282461;
       color: #fff;
@@ -1783,7 +1822,9 @@ ui-selectmenu-icon.ui-icon {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin: 0 auto; }
+      margin: 30px auto 0; }
+      .payment-form__item--price span {
+        margin: 2px 0 0 -2px; }
     .payment-form__item:last-child {
       margin-bottom: 20px; }
   .payment-form .radio-button {
