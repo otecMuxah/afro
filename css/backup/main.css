@@ -118,8 +118,8 @@ body {
       padding: 0 15px; } }
 
 .header {
-  top: 1px;
-  left: 26px;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 10; }
   @media screen and (max-width: 1185px) {
@@ -317,14 +317,7 @@ body {
         width: 8px; } }
 
 .login--holder {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  min-width: 108px; }
+  position: relative; }
   @media screen and (max-width: 850px) {
     .login--holder {
       display: -webkit-box;
@@ -337,9 +330,6 @@ body {
   @media screen and (max-width: 850px) {
     .login--holder .navigation__link {
       margin-bottom: 10px; } }
-
-.login__username {
-  cursor: pointer; }
 
 .login__username-holder {
   position: relative;
@@ -420,7 +410,7 @@ body {
 .main-banner {
   background: url("../img/main-banner.jpg") no-repeat;
   background-size: cover;
-  height: 855px;
+  height: 858px;
   position: relative;
   z-index: 1; }
   .main-banner__layer-img {
@@ -474,16 +464,16 @@ body {
           flex-direction: column;
   padding: 18px 16px;
   box-sizing: border-box;
-  -webkit-transform: translate(0%, 8%);
-          transform: translate(0%, 8%); }
+  -webkit-transform: translate(-4%, 7%);
+          transform: translate(-4%, 7%); }
   @media screen and (max-width: 850px) {
     .form {
       max-width: 100%;
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0); } }
   .form--hire {
-    -webkit-transform: translate(0%, 8%);
-            transform: translate(0%, 8%); }
+    -webkit-transform: translate(-5%, 7%);
+            transform: translate(-5%, 7%); }
   .form__2nd {
     max-width: 410px;
     max-height: 500px;
@@ -506,8 +496,7 @@ body {
         -ms-grid-row-align: center;
         align-self: center;
     font-family: roboto-light, Arial, sans-serif;
-    margin-bottom: 30px;
-    margin-left: 40px; }
+    margin-bottom: 30px; }
   .form__select-holder {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -518,17 +507,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 -19px 15px;
+    margin-bottom: 15px;
     font-size: 22px; }
   .form__radio-holder {
     font-size: 17px;
     margin-bottom: 33px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    padding-left: 20px; }
-    .form__radio-holder .radio-button {
-      font-size: 17px; }
+    display: flex; }
   .form__buttons-holder {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -561,7 +547,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 32px; }
+    padding-right: 10px; }
   .form__button {
     height: 48px;
     border-radius: 24px;
@@ -574,8 +560,7 @@ body {
     font-size: 22px;
     color: #fff;
     text-decoration: underline;
-    margin-top: 25px;
-    margin-right: 11px; }
+    margin-top: 25px; }
   .form__paragraph {
     font-size: 19px;
     margin-bottom: 20px; }
@@ -650,7 +635,7 @@ body {
 .job-seekers {
   background: #e5e7ea;
   background: #e5e7ea;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
   border-bottom: 1px solid #b6b7b9;
   margin-bottom: 30px; }
   @media screen and (max-width: 1185px) {
@@ -668,10 +653,11 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 16px 22px 16px 0;
+    height: 100px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-right: 22px;
     box-sizing: border-box; }
   .job-seekers__title {
     font-size: 16px;
@@ -720,27 +706,20 @@ body {
   background: #dcdae8;
   color: #9b98a9;
   padding: 20px 10px;
+  display: block;
   width: 180px;
   height: 205px;
   box-sizing: border-box;
   border: 1px solid #fff;
   border-radius: 5px;
-  margin-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 17px;
-  padding-bottom: 48px; }
+  margin-bottom: 15px; }
 
 .carousel__img {
   width: 180px;
-  height: 202px;
+  height: 205px;
   border: 1px solid #fff;
   border-radius: 5px;
-  margin-bottom: 8px; }
+  margin-bottom: 12px; }
 
 .carousel__button {
   font-size: 18px;
@@ -753,7 +732,7 @@ body {
   font: 14px/15px roboto-regular, Arial, sans-serif;
   color: #000000;
   display: block;
-  margin-bottom: 6px; }
+  margin-bottom: 12px; }
 
 .carousel__candidate-position {
   font: 12px/15px roboto-light, Arial, sans-serif;
@@ -1268,8 +1247,6 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-    .candidate-card__verified-popup .button {
-      margin-top: 30px; }
   .candidate-card__vetted {
     font-size: 12px;
     margin-bottom: 30px; }
@@ -1615,7 +1592,7 @@ ui-selectmenu-icon.ui-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
   .personal-form__textarea {
     width: 100%;
     resize: none;
@@ -1641,21 +1618,6 @@ ui-selectmenu-icon.ui-icon {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .personal-form__title--hint {
-      position: relative; }
-      .personal-form__title--hint:before {
-        content: '?';
-        position: absolute;
-        font-size: 10px;
-        width: 12px;
-        height: 12px;
-        text-align: center;
-        right: 20px;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-                transform: translate(0, -50%);
-        border-radius: 50%;
-        border: 1px #82c450 solid; }
   .personal-form__status {
     text-align: center;
     font-size: 18px;
@@ -1680,21 +1642,12 @@ ui-selectmenu-icon.ui-icon {
             flex: 1;
     padding-top: 65px; }
   .personal-form__image {
-    max-width: 180px;
-    margin-bottom: 20px; }
-  .personal-form__rows {
-    margin-bottom: 30px; }
+    max-width: 180px; }
   .personal-form__input-image {
     position: absolute;
     opacity: 0; }
     .personal-form__input-image:hover ~ .balloon {
       display: block; }
-  .personal-form__header {
-    font-size: 24px;
-    color: #282461; }
-  .personal-form__sub-header {
-    font-size: 12px;
-    color: #f70b0b; }
   .personal-form__label {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 47%;
@@ -1719,19 +1672,6 @@ ui-selectmenu-icon.ui-icon {
       width: 50%; }
   .personal-form__input-image {
     width: 180px !important; }
-  .personal-form__upload-image--hint:before {
-    content: '?';
-    position: absolute;
-    font-size: 10px;
-    width: 12px;
-    height: 12px;
-    text-align: center;
-    right: 26px;
-    top: 49%;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    border-radius: 50%;
-    border: 1px #82c450 solid; }
   .personal-form__billing-holder {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1824,12 +1764,12 @@ ui-selectmenu-icon.ui-icon {
   .payment-form__list {
     list-style: decimal;
     padding-left: 30px;
-    margin-bottom: 40px; }
+    margin-bottom: 15px; }
   .payment-form__item {
-    margin-bottom: 3px; }
+    margin-bottom: 10px; }
     .payment-form__item--price {
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
       border-radius: 50%;
       background: #282461;
       color: #fff;
@@ -1843,9 +1783,7 @@ ui-selectmenu-icon.ui-icon {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin: 30px auto 0; }
-      .payment-form__item--price span {
-        margin: 2px 0 0 -2px; }
+      margin: 0 auto; }
     .payment-form__item:last-child {
       margin-bottom: 20px; }
   .payment-form .radio-button {

@@ -1,6 +1,9 @@
 .login {
     &--holder {
         position: relative;
+        display: flex;
+        justify-content: flex-end;
+        min-width: 108px;
         @include width850 {
             display: flex;
             flex-direction: column;
@@ -10,6 +13,9 @@
                 margin-bottom: 10px;
             }
         }
+    }
+    &__username {
+        cursor: pointer;
     }
     &__username-holder {
         position: relative;

@@ -1,7 +1,7 @@
 .job-seekers {
     background: $color-gray;
     background: #e5e7ea;
-    padding-bottom: 26px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #b6b7b9;
     margin-bottom: 30px;
     @include width1185 {
@@ -17,9 +17,8 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        height: 100px;
+        padding: 16px 22px 16px 0;
         align-items: center;
-        padding-right: 22px;
         box-sizing: border-box;
     }
     &__title {
