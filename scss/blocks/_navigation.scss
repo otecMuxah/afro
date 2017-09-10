@@ -31,6 +31,9 @@
             //margin-right: 0;
             //margin-left: 52px;
         }
+        &:nth-child(3) {
+
+        }
         @include width850 {
             margin: 0 0 20px 0;
             &:last-child {
@@ -64,8 +67,14 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+        .navigation__item:nth-child(3) & {
+            fill: none;
+            stroke: $color-green;
+        }
         @include width850 {
             width: 8px;
         }
     }
 }
+
+

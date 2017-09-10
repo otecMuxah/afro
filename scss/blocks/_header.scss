@@ -38,7 +38,7 @@
         width: 145px;
     }
     &__nav-holder {
-        flex: 0 1 80%;
+        flex: 0 1 80.1%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -46,7 +46,7 @@
         background: $color-blue;
         font: 14px/15px $font_light;
         border-radius: 14px;
-        padding: 0 120px 0 20px;
+        padding: 1px 120px 1px 20px;
         margin-right: -78px;
         @include width1185 {
             margin-right: 0;

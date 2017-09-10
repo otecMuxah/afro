@@ -160,8 +160,8 @@ body {
     width: 145px; }
   .header__nav-holder {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 80%;
-            flex: 0 1 80%;
+        -ms-flex: 0 1 80.1%;
+            flex: 0 1 80.1%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -175,7 +175,7 @@ body {
     background: #282461;
     font: 14px/15px roboto-light, Arial, sans-serif;
     border-radius: 14px;
-    padding: 0 120px 0 20px;
+    padding: 1px 120px 1px 20px;
     margin-right: -78px; }
     @media screen and (max-width: 1185px) {
       .header__nav-holder {
@@ -312,6 +312,9 @@ body {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
+    .navigation__item:nth-child(3) .navigation__icon {
+      fill: none;
+      stroke: #82c450; }
     @media screen and (max-width: 850px) {
       .navigation__icon {
         width: 8px; } }
@@ -366,16 +369,17 @@ body {
   border-style: solid;
   border-radius: 0 0 10px 10px;
   background-color: white;
-  padding: 13px 2px;
+  padding: 4px 2px;
   display: none;
-  right: 0; }
+  right: -8px;
+  min-width: 175px; }
   .login--holder.active .login__dropdown {
     display: block; }
 
 .login__link {
   font: 12px/14px roboto-regular, Arial, sans-serif;
   color: #242327;
-  padding: 3px 18px 5px;
+  padding: 2px 18px;
   display: block;
   white-space: nowrap; }
   .login__link:hover {
@@ -518,7 +522,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0 -19px 15px;
+    margin-bottom: 15px;
     font-size: 22px; }
   .form__radio-holder {
     font-size: 17px;
@@ -943,9 +947,14 @@ body {
     font-size: 23px; }
   .hire-now .ui-selectmenu-button.ui-button {
     border-bottom: 1px solid #aeb2be;
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
-    padding: .4em; }
+    padding: .4em;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-right: 10px; }
+    .hire-now .ui-selectmenu-button.ui-button:last-child {
+      margin-right: 0; }
   .hire-now .ui-button .ui-selectmenu-icon.ui-icon:before {
     border-color: #aeb2be transparent transparent transparent; }
   .hire-now .ui-selectmenu-text {
@@ -960,8 +969,8 @@ body {
   background: #fff;
   border: 1px #a2a2a2 solid;
   border-radius: 6px;
-  margin-bottom: 20px;
-  padding: 18px;
+  margin-bottom: 18px;
+  padding: 18px 18px 10px;
   box-sizing: border-box; }
   .candidate-card__wrapper {
     display: -webkit-box;
@@ -984,11 +993,12 @@ body {
   .candidate-card__icon-holder {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 20px; }
   .candidate-card__icon {
     fill: #82c450;
-    width: 25px;
-    height: 50px; }
+    width: 29px;
+    height: 58px; }
   .candidate-card__phone {
     font: 15px/17px roboto-regular, Arial, sans-serif;
     color: #242327; }
@@ -998,9 +1008,15 @@ body {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    position: absolute;
+    width: 136%;
+    bottom: 0; }
     .candidate-card__buttons-holder--margin {
       margin-right: -91px; }
+    @media screen and (max-width: 850px) {
+      .candidate-card__buttons-holder {
+        width: 100%; } }
   .candidate-card__button {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 48%;
@@ -1013,7 +1029,14 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding: 0 18px; }
+    padding: 0 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .candidate-card__small-card .candidate-card__holder {
       padding: 0 9px; }
   .candidate-card__controls {
@@ -1030,11 +1053,15 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 81px; }
+    width: 81px;
+    padding-bottom: 14px; }
     .candidate-card__wrapper--more .candidate-card__controls {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
+    .candidate-card__controls--center {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
     @media screen and (max-width: 650px) {
       .candidate-card__controls {
         width: auto; } }
@@ -1089,7 +1116,8 @@ body {
     width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+    margin-top: -4px; }
     @media screen and (max-width: 650px) {
       .candidate-card__close-button {
         position: absolute;
@@ -1146,18 +1174,23 @@ body {
   .candidate-card__name {
     font: 22px roboto-regular, Arial, sans-serif;
     color: #000000;
-    margin-bottom: 17px; }
+    margin-bottom: 14px; }
     .candidate-card__small-card .candidate-card__name {
       font-size: 16px;
       margin-bottom: 5px; }
   .candidate-card__details-holder {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    position: relative;
+    padding-bottom: 30px;
     color: #000000; }
   .candidate-card__detail {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 12px;
-    margin-bottom: 11px;
+    margin-bottom: 7px;
     position: relative; }
     .candidate-card__small-card .candidate-card__detail {
       font-size: 9px;
@@ -1175,6 +1208,8 @@ body {
       width: 100%;
       height: 1px;
       background: #aeb2be; }
+    .candidate-card__detail--name {
+      margin-bottom: 21px; }
   .candidate-card__detail-name, .candidate-card__detail-value {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -1615,12 +1650,17 @@ ui-selectmenu-icon.ui-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 20px; }
+    margin-bottom: 17px; }
+    .personal-form__row:nth-child(1), .personal-form__row:nth-child(2) {
+      margin-bottom: 6px; }
+    .personal-form__row .radio-button:first-child {
+      margin-left: 0; }
   .personal-form__textarea {
     width: 100%;
     resize: none;
     height: 100px;
-    margin: 19px 0; }
+    margin: 11px -15px;
+    padding: 1px 15px; }
   .personal-form__buttons-holder {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1629,8 +1669,8 @@ ui-selectmenu-icon.ui-icon {
     margin-right: 10px; }
   .personal-form__button {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 45%;
-            flex: 0 0 45%; }
+        -ms-flex: 0 0 42%;
+            flex: 0 0 42%; }
   .personal-form__title {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40%;

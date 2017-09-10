@@ -21,13 +21,22 @@
 
     &__row {
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 6px;
+        }
+        .radio-button:first-child {
+            margin-left: 0;
+        }
+
     }
     &__textarea {
         width: 100%;
         resize: none;
         height: 100px;
-        margin: 19px 0;
+        margin: 11px -15px;
+        padding: 1px 15px;
     }
     &__buttons-holder {
         justify-content: space-between;
@@ -36,7 +45,7 @@
         margin-right: 10px;
     }
     &__button {
-        flex: 0 0 45%;
+        flex: 0 0 42%;
     }
     &__title {
         flex: 0 0 40%;

@@ -36,9 +36,10 @@
         border-style: solid;
         border-radius: 0 0 10px 10px;
         background-color: rgb(255, 255, 255);
-        padding: 13px 2px;
+        padding: 4px 2px;
         display: none;
-        right: 0;
+        right: -8px;
+        min-width: 175px;
         .login--holder.active & {
             display: block;
         }
@@ -46,7 +47,7 @@
     &__link {
         font: 12px/14px $font;
         color: $color-black;
-        padding: 3px 18px 5px;
+        padding: 2px 18px;
         display: block;
         white-space: nowrap;
         &:hover {

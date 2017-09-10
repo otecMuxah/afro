@@ -2,8 +2,8 @@
     background: $color-white;
     border: 1px #a2a2a2 solid;
     border-radius: 6px;
-    margin-bottom: 20px;
-    padding: 18px;
+    margin-bottom: 18px;
+    padding: 18px 18px 10px;
     box-sizing: border-box;
     &__wrapper {
         display: flex;
@@ -25,11 +25,12 @@
     }
     &__icon-holder {
         display: flex;
+        margin-bottom: 20px;
     }
     &__icon {
         fill: $color-green;
-        width: 25px;
-        height: 50px;
+        width: 29px;
+        height: 58px;
     }
     &__phone {
         font: 15px/17px $font;
@@ -38,8 +39,14 @@
     &__buttons-holder {
         display: flex;
         justify-content: space-between;
+        position: absolute;
+        width: 136%;
+        bottom: 0;
         &--margin {
             margin-right: -91px;
+        }
+        @include width850 {
+            width: 100%;
         }
     }
     &__button {
@@ -53,6 +60,8 @@
     &__holder {
         flex: 1;
         padding: 0 18px;
+        display: flex;
+        flex-direction: column;
         .candidate-card__small-card & {
             padding: 0 9px;
         }
@@ -63,8 +72,12 @@
         align-items: flex-end;
         justify-content: space-between;
         width: 81px;
+        padding-bottom: 14px;
         .candidate-card__wrapper--more & {
             justify-content: flex-end;
+        }
+        &--center {
+            justify-content: space-around;
         }
         @include width650 {
             width: auto;
@@ -110,6 +123,7 @@
         display: flex;
         width: 100%;
         justify-content: flex-end;
+        margin-top: -4px;
         @include width650 {
             position: absolute;
             top: 0;
@@ -174,20 +188,22 @@
     &__name {
         font: 22px $font;
         color: #000000;
-        margin-bottom: 17px;
+        margin-bottom: 14px;
         .candidate-card__small-card & {
             font-size: 16px;
             margin-bottom: 5px;
         }
     }
     &__details-holder {
-
+        flex: 1;
+        position: relative;
+        padding-bottom: 30px;
         color: #000000;
     }
     &__detail {
         display: flex;
         font-size: 12px;
-        margin-bottom: 11px;
+        margin-bottom: 7px;
         position: relative;
         .candidate-card__small-card & {
             font-size: 9px;
@@ -209,6 +225,9 @@
                 height: 1px;
                 background: #aeb2be;
             }
+        }
+        &--name {
+            margin-bottom: 21px;
         }
     }
     &__detail-name,

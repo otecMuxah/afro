@@ -108,9 +108,14 @@
     }
     .ui-selectmenu-button.ui-button {
         border-bottom: 1px solid $color-gray-2;
-        width: 100%;
+        width: 90%;
         box-sizing: border-box;
         padding: .4em;
+        flex-basis: 30%;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     .ui-button .ui-selectmenu-icon.ui-icon:before {
         border-color: $color-gray-2 transparent transparent transparent;
