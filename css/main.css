@@ -314,7 +314,11 @@ body {
             transform: translateY(-50%); }
     .navigation__item:nth-child(3) .navigation__icon {
       fill: none;
-      stroke: #82c450; }
+      stroke: #82c450;
+      stroke-width: 22px; }
+    .login__username .navigation__icon {
+      width: 12px;
+      height: 14px; }
     @media screen and (max-width: 850px) {
       .navigation__icon {
         width: 8px; } }
@@ -491,7 +495,9 @@ body {
   .form__2nd {
     max-width: 410px;
     max-height: 500px;
-    height: auto; }
+    height: auto;
+    -webkit-transform: translate(-24%, -18%);
+            transform: translate(-24%, -18%); }
     .form__2nd .form__link {
       text-decoration: none;
       margin: 0; }
@@ -499,6 +505,11 @@ body {
       margin-bottom: 20px; }
     .form__2nd .ui-selectmenu-button.ui-button {
       width: 45%; }
+    .form__2nd .form__paragraph {
+      font-size: 19px;
+      margin-bottom: 40px; }
+    .form__2nd .form__text-input-holder {
+      margin-bottom: 40px; }
   .form__simple {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -533,6 +544,8 @@ body {
     padding-left: 20px; }
     .form__radio-holder .radio-button {
       font-size: 17px; }
+      .form__radio-holder .radio-button:first-child {
+        margin-left: 0; }
   .form__buttons-holder {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -844,14 +857,11 @@ body {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-bottom: 7px; }
   .hire-now__select-wrapper {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 23%;
-            flex: 0 0 23%; }
+        -ms-flex: 0 0 26%;
+            flex: 0 0 26%; }
     .hire-now__select-wrapper:first-child {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 48%;
@@ -872,7 +882,10 @@ body {
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+    padding-left: 0; }
+    .hire-now__radio-holder .radio-button:first-child {
+      margin-left: 0; }
   .hire-now__img-svg {
     height: 135px;
     width: 111px;
@@ -1415,6 +1428,8 @@ body {
 .radio-button {
   margin-left: 15px;
   font-size: 12px; }
+  .radio-button:first-child {
+    margin-left: 0; }
   .radio-button__label {
     position: relative;
     padding-left: 20px;
@@ -1616,8 +1631,8 @@ ui-selectmenu-icon.ui-icon {
       -ms-flex: 1;
           flex: 1;
   font: 14px/16px roboto-light, Arial, sans-serif;
-  font: 14px/16px roboto-light, Arial, sans-serif;
-  color: #242327; }
+  color: #242327;
+  background: none; }
   .text-input::-webkit-input-placeholder {
     color: #7e7ca0; }
   .text-input:-ms-input-placeholder {

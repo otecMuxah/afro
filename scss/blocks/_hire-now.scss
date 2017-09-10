@@ -20,11 +20,10 @@
     &__select-holder {
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
         margin-bottom: 7px;
     }
     &__select-wrapper {
-        flex: 0 0 23%;
+        flex: 0 0 26%;
         &:first-child {
             flex: 0 0 48%;
             @include width650 {
@@ -38,8 +37,9 @@
     &__radio-holder {
         display: flex;
         justify-content: flex-end;
-        .radio-button {
-
+        padding-left: 0;
+        .radio-button:first-child {
+            margin-left: 0;
         }
     }
     &__img-svg {

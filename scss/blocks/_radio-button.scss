@@ -1,6 +1,9 @@
 .radio-button {
     margin-left: 15px;
     font-size: 12px;
+    &:first-child {
+        margin-left: 0;
+    }
     &__label {
         position: relative;
         padding-left: 20px;

@@ -70,6 +70,11 @@
         .navigation__item:nth-child(3) & {
             fill: none;
             stroke: $color-green;
+            stroke-width: 22px;
+        }
+        .login__username & {
+            width: 12px;
+            height: 14px;
         }
         @include width850 {
             width: 8px;
