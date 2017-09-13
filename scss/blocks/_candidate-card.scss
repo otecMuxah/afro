@@ -280,6 +280,7 @@
         font: 18px/20px $font;
         display: none;
         flex-direction: column;
+        z-index: 11;
         @include width1185 {
             transform: translate(57%, 0);
         }
@@ -314,12 +315,32 @@
             height: 100%;
             width: 21px;
             z-index: 0;
+            
         }
         &.active {
             display: flex;
         }
         .button {
             margin-top: 30px;
+        }
+        &--right {
+            transform: translate(100%, -9%);
+            @include width1185 {
+                right: -10px;
+                left: auto;
+                transform: translate(-60%, -9%);
+            }
+            &:before {
+                right: auto;
+                left: -10px;
+                transform: rotate(180deg);
+                @include width1185 {
+                    right: -10px;
+                    left: auto;
+                    transform: rotate(0deg);
+                }
+            }
+
         }
     }
     &__vetted {

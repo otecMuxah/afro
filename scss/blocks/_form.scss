@@ -116,6 +116,9 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        &--center-button {
+            justify-content: center;
+        }
     }
     &__text-input {
         font-size: 18px;

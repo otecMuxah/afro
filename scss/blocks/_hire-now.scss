@@ -21,6 +21,7 @@
         display: flex;
         align-items: flex-end;
         margin-bottom: 7px;
+        position: relative;
     }
     &__select-wrapper {
         flex: 0 0 26%;
@@ -78,6 +79,9 @@
             align-items: center;
             justify-content: center;
             color: $color-white;
+        }
+        &:hover ~ .candidate-card__verified-popup {
+            display: flex;
         }
     }
 

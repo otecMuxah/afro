@@ -126,6 +126,7 @@
         overflow: hidden;
         &--narrow {
             width: 50%;
+            overflow: visible;
         }
     }
     &__input-image {
